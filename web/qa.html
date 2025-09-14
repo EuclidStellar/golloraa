@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gollora - Code Q&A</title>
+    <style>
+        :root {
+            --border-color: #e1e4e8;
+            --background-color: #f6f8fa;
+            --text-color: #24292e;
+            --user-msg-bg: #007bff;
+            --bot-msg-bg: #ffffff;
+            --status-text-color: #586069;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            height: 90vh;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .header {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+            font-weight: 600;
+        }
+        #messages {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .message {
+            padding: 10px 15px;
+            border-radius: 18px;
+            max-width: 85%;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+        .user-message {
+            background-color: var(--user-msg-bg);
+            color: white;
+            align-self: flex-end;
+            border-bottom-right-radius: 4px;
+        }
+        .bot-message {
+            background-color: var(--bot-msg-bg);
+            color: var(--text-color);
+            align-self: flex-start;
+            border: 1px solid var(--border-color);
+            border-bottom-left-radius: 4px;
+        }
+        #status-log {
+            background-color: #24292e;
+            color: #c9d1d9;
+            font-family: 'SF Mono', 'Consolas', 'Liberation Mono', Menlo, Courier, monospace;
+            font-size: 13px;
+            padding: 15px;
+            overflow-y: auto;
+            max-height: 200px;
+            border-top: 1px solid var(--border-color);
+            white-space: pre-wrap;
+            display: none;
+        }
+        #input-area {
+            border-top: 1px solid var(--border-color);
+            padding: 15px;
+            display: flex;
+            gap: 10px;
+        }
+        #input-area input {
+            flex-grow: 1;
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        #input-area input:focus {
+            outline: none;
+            border-color: #0366d6;
+            box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.3);
+        }
+        #input-area button {
+            padding: 12px 20px;
+            font-size: 16px;
+            background-color: #2ea44f;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        #input-area button:hover { background-color: #2c974b; }
+        #input-area button:disabled { background-color: #94d3a2; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Gollora Code Q&A</div>
+        <div id="messages"></div>
+        <pre id="status-log"></pre>
+        <div id="input-area">
+            <input type="text" id="input-field" placeholder="Enter GitHub Repository URL..." autocomplete="off">
+            <button id="send-button">Analyze</button>
+        </div>
+    </div>
+
+    <script>
+        const messagesDiv = document.getElementById('messages');
+        const statusLog = document.getElementById('status-log');
+        const inputField = document.getElementById('input-field');
+        const sendButton = document.getElementById('send-button');
+        const inputArea = document.getElementById('input-area');
+
+        let socket;
+        let agentState = 'init'; // 'init', 'processing', 'ready'
+
+        function addMessage(text, sender) {
+            const messageElem = document.createElement('div');
+            messageElem.classList.add('message', sender + '-message');
+            messageElem.textContent = text;
+            messagesDiv.appendChild(messageElem);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        function logStatus(text) {
+            statusLog.style.display = 'block';
+            statusLog.textContent += text + '\n';
+            statusLog.scrollTop = statusLog.scrollHeight;
+        }
+
+        function handleSend() {
+            const value = inputField.value.trim();
+            if (!value) return;
+
+            if (agentState === 'init') {
+                agentState = 'processing';
+                inputField.disabled = true;
+                sendButton.disabled = true;
+                logStatus(`Connecting to agent and analyzing: ${value}`);
+                connectWebSocket(value);
+            } else if (agentState === 'ready') {
+                addMessage(value, 'user');
+                socket.send(JSON.stringify({ type: 'question', question: value }));
+                inputField.value = '';
+                inputField.disabled = true;
+                sendButton.disabled = true;
+            }
+        }
+
+        function connectWebSocket(repoUrl) {
+            const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+            socket = new WebSocket(`${wsProtocol}//${window.location.host}/qa/ws`);
+
+            socket.onopen = () => {
+                socket.send(JSON.stringify({ type: 'init', url: repoUrl }));
+            };
+
+            socket.onmessage = (event) => {
+                const data = JSON.parse(event.data);
+                switch (data.type) {
+                    case 'status':
+                        logStatus(data.message);
+                        break;
+                    case 'ready':
+                        agentState = 'ready';
+                        logStatus(data.message);
+                        inputField.disabled = false;
+                        sendButton.disabled = false;
+                        inputField.placeholder = 'Ask a question about the code...';
+                        sendButton.textContent = 'Send';
+                        inputField.focus();
+                        break;
+                    case 'answer':
+                        addMessage(data.message, 'bot');
+                        inputField.disabled = false;
+                        sendButton.disabled = false;
+                        inputField.focus();
+                        break;
+                    case 'error':
+                        logStatus(`Error: ${data.message}`);
+                        inputField.disabled = true;
+                        sendButton.disabled = true;
+                        break;
+                }
+            };
+
+            socket.onclose = () => {
+                logStatus('Connection closed.');
+                inputField.disabled = true;
+                sendButton.disabled = true;
+            };
+
+            socket.onerror = (error) => {
+                logStatus('WebSocket error. See console for details.');
+                console.error('WebSocket Error:', error);
+            };
+        }
+
+        sendButton.addEventListener('click', handleSend);
+        inputField.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                handleSend();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,528 @@
+INFO: 2025/03/27 22:22:15 [proc.go:271] Starting Gollora
+ERROR: 2025/03/27 22:22:15 [main.go:80] Missing required arguments for direct analysis
+INFO: 2025/03/27 22:22:28 [proc.go:271] Starting Gollora
+ERROR: 2025/03/27 22:22:28 [main.go:80] Missing required arguments for direct analysis
+INFO: 2025/03/27 22:22:52 [proc.go:271] Starting Gollora
+INFO: 2025/03/27 22:22:52 [main.go:80] Getting changed files in local repository
+INFO: 2025/03/27 22:22:52 [main.go:289] Starting code analysis for 
+INFO: 2025/03/27 22:22:52 [asm_arm64.s:1222] Running AI analysis
+INFO: 2025/03/27 22:22:52 [asm_arm64.s:1222] Checking dependencies
+INFO: 2025/03/27 22:22:52 [asm_arm64.s:1222] Analyzing 1 go files
+INFO: 2025/03/27 22:22:52 [review_engine.go:102] Analyzing 1 Go files
+INFO: 2025/03/27 22:22:52 [review_engine.go:102] Running tool: golangci-lint
+INFO: 2025/03/27 22:22:52 [review_engine.go:169] Running AI analysis on 1 files
+INFO: 2025/03/27 22:22:52 [review_engine.go:169] Analyzing main.go with AI
+ERROR: 2025/03/27 22:22:52 [review_engine.go:102] Error running golangci-lint: failed to run golangci-lint: exec: "golangci-lint": executable file not found in $PATH
+INFO: 2025/03/27 22:22:52 [review_engine.go:102] Running tool: staticcheck
+ERROR: 2025/03/27 22:22:52 [review_engine.go:102] Error running staticcheck: failed to run staticcheck: exec: "staticcheck": executable file not found in $PATH
+INFO: 2025/03/27 22:22:52 [review_engine.go:102] Running tool: gosec
+ERROR: 2025/03/27 22:22:52 [review_engine.go:102] Error running gosec: failed to run gosec: exec: "gosec": executable file not found in $PATH
+INFO: 2025/03/27 22:22:52 [review_engine.go:136] Found dependency files: [/tmp/gollora-test2/package.json]
+INFO: 2025/03/27 22:22:52 [review_engine.go:136] Running dependency checker: owasp-dependency-check
+ERROR: 2025/03/27 22:22:52 [review_engine.go:136] Error running OWASP Dependency-Check: failed to run OWASP Dependency-Check: exec: "dependency-check": executable file not found in $PATH
+INFO: 2025/03/27 22:22:52 [review_engine.go:136] Running dependency checker: deps.dev
+ERROR: 2025/03/27 22:22:52 [review_engine.go:136] Error running deps.dev check: failed to read dependency file: open /tmp/gollora-test2/tmp/gollora-test2/package.json: no such file or directory
+ERROR: 2025/03/27 22:22:54 [review_engine.go:169] Error analyzing main.go with Gemini: gemini API returned status: 400 Bad Request, body: {
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+        "locale": "en-US",
+        "message": "API key not valid. Please pass a valid API key."
+      }
+    ]
+  }
+}
+INFO: 2025/03/27 22:22:57 [main.go:289] Analysis complete. Found 0 issues (0 critical, 0 error, 0 warning)
+INFO: 2025/03/27 22:22:57 [main.go:80] JSON report saved to: /tmp/gollora-test2/results/code-review-20250327-222252-abcdef.json
+INFO: 2025/03/27 22:22:57 [main.go:80] Markdown report saved to: /tmp/gollora-test2/results/code-review-20250327-222252-abcdef.md
+INFO: 2025/03/27 22:22:57 [main.go:80] Analysis complete! Found 0 issues
+INFO: 2025/03/27 22:25:45 [proc.go:271] Starting Gollora
+INFO: 2025/03/27 22:25:45 [main.go:80] Getting changed files in local repository
+INFO: 2025/03/27 22:25:45 [main.go:289] Starting code analysis for 
+INFO: 2025/03/27 22:25:45 [asm_arm64.s:1222] Running AI analysis
+INFO: 2025/03/27 22:25:45 [asm_arm64.s:1222] Checking dependencies
+INFO: 2025/03/27 22:25:45 [asm_arm64.s:1222] Analyzing 1 go files
+INFO: 2025/03/27 22:25:45 [review_engine.go:169] Running AI analysis on 1 files
+INFO: 2025/03/27 22:25:45 [review_engine.go:169] Analyzing main.go with AI
+INFO: 2025/03/27 22:25:45 [review_engine.go:102] Analyzing 1 Go files
+INFO: 2025/03/27 22:25:45 [review_engine.go:102] Running tool: golangci-lint
+ERROR: 2025/03/27 22:25:45 [review_engine.go:102] Error running golangci-lint: failed to run golangci-lint: exec: "golangci-lint": executable file not found in $PATH
+INFO: 2025/03/27 22:25:45 [review_engine.go:102] Running tool: staticcheck
+ERROR: 2025/03/27 22:25:45 [review_engine.go:102] Error running staticcheck: failed to run staticcheck: exec: "staticcheck": executable file not found in $PATH
+INFO: 2025/03/27 22:25:45 [review_engine.go:102] Running tool: gosec
+ERROR: 2025/03/27 22:25:45 [review_engine.go:102] Error running gosec: failed to run gosec: exec: "gosec": executable file not found in $PATH
+INFO: 2025/03/27 22:25:45 [review_engine.go:136] Found dependency files: [/tmp/gollora-test2/package.json]
+INFO: 2025/03/27 22:25:45 [review_engine.go:136] Running dependency checker: owasp-dependency-check
+ERROR: 2025/03/27 22:25:45 [review_engine.go:136] Error running OWASP Dependency-Check: failed to run OWASP Dependency-Check: exec: "dependency-check": executable file not found in $PATH
+INFO: 2025/03/27 22:25:45 [review_engine.go:136] Running dependency checker: deps.dev
+ERROR: 2025/03/27 22:25:45 [review_engine.go:136] Error running deps.dev check: failed to read dependency file: open /tmp/gollora-test2/tmp/gollora-test2/package.json: no such file or directory
+ERROR: 2025/03/27 22:25:46 [review_engine.go:169] Error analyzing main.go with Gemini: gemini API returned status: 400 Bad Request, body: {
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+        "locale": "en-US",
+        "message": "API key not valid. Please pass a valid API key."
+      }
+    ]
+  }
+}
+INFO: 2025/03/27 22:25:50 [main.go:289] Analysis complete. Found 0 issues (0 critical, 0 error, 0 warning)
+INFO: 2025/03/27 22:25:50 [main.go:80] JSON report saved to: /tmp/gollora-test2/results/code-review-20250327-222545-abcdef.json
+INFO: 2025/03/27 22:25:50 [main.go:80] Markdown report saved to: /tmp/gollora-test2/results/code-review-20250327-222545-abcdef.md
+INFO: 2025/03/27 22:25:50 [main.go:80] Analysis complete! Found 0 issues
+INFO: 2025/03/27 22:27:16 [proc.go:271] Starting Gollora
+INFO: 2025/03/27 22:27:16 [main.go:80] Getting changed files in local repository
+INFO: 2025/03/27 22:27:16 [main.go:289] Starting code analysis for 
+INFO: 2025/03/27 22:27:16 [asm_arm64.s:1222] Running AI analysis
+INFO: 2025/03/27 22:27:16 [review_engine.go:169] Running AI analysis on 1 files
+INFO: 2025/03/27 22:27:16 [asm_arm64.s:1222] Checking dependencies
+INFO: 2025/03/27 22:27:16 [asm_arm64.s:1222] Analyzing 1 go files
+INFO: 2025/03/27 22:27:16 [review_engine.go:169] Analyzing main.go with AI
+INFO: 2025/03/27 22:27:16 [review_engine.go:102] Analyzing 1 Go files
+INFO: 2025/03/27 22:27:16 [review_engine.go:102] Running tool: golangci-lint
+ERROR: 2025/03/27 22:27:16 [review_engine.go:102] Error running golangci-lint: failed to run golangci-lint: exec: "golangci-lint": executable file not found in $PATH
+INFO: 2025/03/27 22:27:16 [review_engine.go:102] Running tool: staticcheck
+ERROR: 2025/03/27 22:27:16 [review_engine.go:102] Error running staticcheck: failed to run staticcheck: exec: "staticcheck": executable file not found in $PATH
+INFO: 2025/03/27 22:27:16 [review_engine.go:102] Running tool: gosec
+ERROR: 2025/03/27 22:27:16 [review_engine.go:102] Error running gosec: failed to run gosec: exec: "gosec": executable file not found in $PATH
+INFO: 2025/03/27 22:27:16 [review_engine.go:136] Found dependency files: [/tmp/gollora-test2/package.json]
+INFO: 2025/03/27 22:27:16 [review_engine.go:136] Running dependency checker: owasp-dependency-check
+ERROR: 2025/03/27 22:27:16 [review_engine.go:136] Error running OWASP Dependency-Check: failed to run OWASP Dependency-Check: exec: "dependency-check": executable file not found in $PATH
+INFO: 2025/03/27 22:27:16 [review_engine.go:136] Running dependency checker: deps.dev
+ERROR: 2025/03/27 22:27:16 [review_engine.go:136] Error running deps.dev check: failed to read dependency file: open /tmp/gollora-test2/tmp/gollora-test2/package.json: no such file or directory
+ERROR: 2025/03/27 22:27:18 [review_engine.go:169] Error analyzing main.go with Gemini: gemini API returned status: 400 Bad Request, body: {
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+        "locale": "en-US",
+        "message": "API key not valid. Please pass a valid API key."
+      }
+    ]
+  }
+}
+INFO: 2025/03/27 22:27:20 [main.go:289] Analysis complete. Found 0 issues (0 critical, 0 error, 0 warning)
+INFO: 2025/03/27 22:27:20 [main.go:80] JSON report saved to: /tmp/gollora-test2/results/code-review-20250327-222716-abcdef.json
+INFO: 2025/03/27 22:27:20 [main.go:80] Markdown report saved to: /tmp/gollora-test2/results/code-review-20250327-222716-abcdef.md
+INFO: 2025/03/27 22:27:20 [main.go:80] Analysis complete! Found 0 issues
+INFO: 2025/03/27 22:29:22 [proc.go:271] Starting Gollora
+INFO: 2025/03/27 22:29:22 [main.go:80] Getting changed files in local repository
+INFO: 2025/03/27 22:29:22 [main.go:289] Starting code analysis for 
+INFO: 2025/03/27 22:29:22 [asm_arm64.s:1222] Running AI analysis
+INFO: 2025/03/27 22:29:22 [asm_arm64.s:1222] Analyzing 1 go files
+INFO: 2025/03/27 22:29:22 [asm_arm64.s:1222] Checking dependencies
+INFO: 2025/03/27 22:29:22 [review_engine.go:102] Analyzing 1 Go files
+INFO: 2025/03/27 22:29:22 [review_engine.go:102] Running tool: golangci-lint
+INFO: 2025/03/27 22:29:22 [review_engine.go:169] Running AI analysis on 1 files
+INFO: 2025/03/27 22:29:22 [review_engine.go:169] Analyzing main.go with AI
+ERROR: 2025/03/27 22:29:22 [review_engine.go:102] Error running golangci-lint: failed to run golangci-lint: exec: "golangci-lint": executable file not found in $PATH
+INFO: 2025/03/27 22:29:22 [review_engine.go:102] Running tool: staticcheck
+ERROR: 2025/03/27 22:29:22 [review_engine.go:102] Error running staticcheck: failed to run staticcheck: exec: "staticcheck": executable file not found in $PATH
+INFO: 2025/03/27 22:29:22 [review_engine.go:102] Running tool: gosec
+ERROR: 2025/03/27 22:29:22 [review_engine.go:102] Error running gosec: failed to run gosec: exec: "gosec": executable file not found in $PATH
+INFO: 2025/03/27 22:29:22 [review_engine.go:136] Found dependency files: [/tmp/gollora-test2/package.json]
+INFO: 2025/03/27 22:29:22 [review_engine.go:136] Running dependency checker: owasp-dependency-check
+ERROR: 2025/03/27 22:29:22 [review_engine.go:136] Error running OWASP Dependency-Check: failed to run OWASP Dependency-Check: exec: "dependency-check": executable file not found in $PATH
+INFO: 2025/03/27 22:29:22 [review_engine.go:136] Running dependency checker: deps.dev
+ERROR: 2025/03/27 22:29:22 [review_engine.go:136] Error running deps.dev check: failed to read dependency file: open /tmp/gollora-test2/tmp/gollora-test2/package.json: no such file or directory
+ERROR: 2025/03/27 22:29:23 [review_engine.go:169] Error analyzing main.go with Gemini: gemini API returned status: 400 Bad Request, body: {
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+        "locale": "en-US",
+        "message": "API key not valid. Please pass a valid API key."
+      }
+    ]
+  }
+}
+INFO: 2025/03/27 22:29:25 [main.go:289] Analysis complete. Found 0 issues (0 critical, 0 error, 0 warning)
+INFO: 2025/03/27 22:29:25 [main.go:80] JSON report saved to: /tmp/gollora-test2/results/code-review-20250327-222922-abcdef.json
+INFO: 2025/03/27 22:29:25 [main.go:80] Markdown report saved to: /tmp/gollora-test2/results/code-review-20250327-222922-abcdef.md
+INFO: 2025/03/27 22:29:25 [main.go:80] Analysis complete! Found 0 issues
+INFO: 2025/03/27 22:31:48 [proc.go:271] Starting Gollora
+INFO: 2025/03/27 22:31:48 [main.go:80] Getting changed files in local repository
+INFO: 2025/03/27 22:31:48 [main.go:289] Starting code analysis for 
+INFO: 2025/03/27 22:31:48 [asm_arm64.s:1222] Running AI analysis
+INFO: 2025/03/27 22:31:48 [asm_arm64.s:1222] Checking dependencies
+INFO: 2025/03/27 22:31:48 [review_engine.go:169] Running AI analysis on 1 files
+INFO: 2025/03/27 22:31:48 [review_engine.go:169] Analyzing main.go with AI
+INFO: 2025/03/27 22:31:48 [asm_arm64.s:1222] Analyzing 1 go files
+INFO: 2025/03/27 22:31:48 [review_engine.go:102] Analyzing 1 Go files
+INFO: 2025/03/27 22:31:48 [review_engine.go:102] Running tool: golangci-lint
+ERROR: 2025/03/27 22:31:48 [review_engine.go:102] Error running golangci-lint: failed to run golangci-lint: exec: "golangci-lint": executable file not found in $PATH
+INFO: 2025/03/27 22:31:48 [review_engine.go:102] Running tool: staticcheck
+ERROR: 2025/03/27 22:31:48 [review_engine.go:102] Error running staticcheck: failed to run staticcheck: exec: "staticcheck": executable file not found in $PATH
+INFO: 2025/03/27 22:31:48 [review_engine.go:102] Running tool: gosec
+ERROR: 2025/03/27 22:31:48 [review_engine.go:102] Error running gosec: failed to run gosec: exec: "gosec": executable file not found in $PATH
+INFO: 2025/03/27 22:31:48 [review_engine.go:136] Found dependency files: [/tmp/gollora-test2/package.json]
+INFO: 2025/03/27 22:31:48 [review_engine.go:136] Running dependency checker: owasp-dependency-check
+ERROR: 2025/03/27 22:31:48 [review_engine.go:136] Error running OWASP Dependency-Check: failed to run OWASP Dependency-Check: exec: "dependency-check": executable file not found in $PATH
+INFO: 2025/03/27 22:31:48 [review_engine.go:136] Running dependency checker: deps.dev
+ERROR: 2025/03/27 22:31:48 [review_engine.go:136] Error running deps.dev check: failed to read dependency file: open /tmp/gollora-test2/tmp/gollora-test2/package.json: no such file or directory
+ERROR: 2025/03/27 22:31:50 [review_engine.go:169] Error analyzing main.go with Gemini: gemini API returned status: 400 Bad Request, body: {
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+        "locale": "en-US",
+        "message": "API key not valid. Please pass a valid API key."
+      }
+    ]
+  }
+}
+INFO: 2025/03/27 22:31:52 [main.go:289] Analysis complete. Found 0 issues (0 critical, 0 error, 0 warning)
+INFO: 2025/03/27 22:31:52 [main.go:80] JSON report saved to: /tmp/gollora-test2/results/code-review-20250327-223148-abcdef.json
+INFO: 2025/03/27 22:31:52 [main.go:80] Markdown report saved to: /tmp/gollora-test2/results/code-review-20250327-223148-abcdef.md
+INFO: 2025/03/27 22:31:52 [main.go:80] Analysis complete! Found 0 issues
+INFO: 2025/03/27 22:32:17 [proc.go:271] Starting Gollora
+INFO: 2025/03/27 22:32:17 [main.go:80] Getting changed files in local repository
+INFO: 2025/03/27 22:32:17 [main.go:289] Starting code analysis for 
+INFO: 2025/03/27 22:32:17 [asm_arm64.s:1222] Running AI analysis
+INFO: 2025/03/27 22:32:17 [asm_arm64.s:1222] Analyzing 1 go files
+INFO: 2025/03/27 22:32:17 [asm_arm64.s:1222] Checking dependencies
+INFO: 2025/03/27 22:32:17 [review_engine.go:169] Running AI analysis on 1 files
+INFO: 2025/03/27 22:32:17 [review_engine.go:169] Analyzing main.go with AI
+INFO: 2025/03/27 22:32:17 [review_engine.go:102] Analyzing 1 Go files
+INFO: 2025/03/27 22:32:17 [review_engine.go:102] Running tool: golangci-lint
+ERROR: 2025/03/27 22:32:17 [review_engine.go:102] Error running golangci-lint: failed to run golangci-lint: exec: "golangci-lint": executable file not found in $PATH
+INFO: 2025/03/27 22:32:17 [review_engine.go:102] Running tool: staticcheck
+ERROR: 2025/03/27 22:32:17 [review_engine.go:102] Error running staticcheck: failed to run staticcheck: exec: "staticcheck": executable file not found in $PATH
+INFO: 2025/03/27 22:32:17 [review_engine.go:102] Running tool: gosec
+ERROR: 2025/03/27 22:32:17 [review_engine.go:102] Error running gosec: failed to run gosec: exec: "gosec": executable file not found in $PATH
+INFO: 2025/03/27 22:32:17 [review_engine.go:136] Found dependency files: [/tmp/gollora-test2/package.json]
+INFO: 2025/03/27 22:32:17 [review_engine.go:136] Running dependency checker: owasp-dependency-check
+ERROR: 2025/03/27 22:32:17 [review_engine.go:136] Error running OWASP Dependency-Check: failed to run OWASP Dependency-Check: exec: "dependency-check": executable file not found in $PATH
+INFO: 2025/03/27 22:32:17 [review_engine.go:136] Running dependency checker: deps.dev
+ERROR: 2025/03/27 22:32:17 [review_engine.go:136] Error running deps.dev check: failed to read dependency file: open /tmp/gollora-test2/tmp/gollora-test2/package.json: no such file or directory
+ERROR: 2025/03/27 22:32:18 [review_engine.go:169] Error analyzing main.go with Gemini: gemini API returned status: 400 Bad Request, body: {
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+        "locale": "en-US",
+        "message": "API key not valid. Please pass a valid API key."
+      }
+    ]
+  }
+}
+INFO: 2025/03/27 22:32:20 [main.go:289] Analysis complete. Found 0 issues (0 critical, 0 error, 0 warning)
+INFO: 2025/03/27 22:32:20 [main.go:80] JSON report saved to: /tmp/gollora-test2/results/code-review-20250327-223217-abcdef.json
+INFO: 2025/03/27 22:32:20 [main.go:80] Markdown report saved to: /tmp/gollora-test2/results/code-review-20250327-223217-abcdef.md
+INFO: 2025/03/27 22:32:20 [main.go:80] Analysis complete! Found 0 issues
+INFO: 2025/03/27 22:41:35 [proc.go:271] Starting Gollora
+INFO: 2025/03/27 22:41:35 [main.go:80] Getting changed files in local repository
+INFO: 2025/03/27 22:41:35 [main.go:289] Starting code analysis for 
+INFO: 2025/03/27 22:41:35 [asm_arm64.s:1222] Running AI analysis
+INFO: 2025/03/27 22:41:35 [asm_arm64.s:1222] Checking dependencies
+INFO: 2025/03/27 22:41:35 [review_engine.go:169] Running AI analysis on 1 files
+INFO: 2025/03/27 22:41:35 [review_engine.go:169] Analyzing main.go with AI
+INFO: 2025/03/27 22:41:35 [asm_arm64.s:1222] Analyzing 1 go files
+INFO: 2025/03/27 22:41:35 [review_engine.go:102] Analyzing 1 Go files
+INFO: 2025/03/27 22:41:35 [review_engine.go:102] Running tool: golangci-lint
+ERROR: 2025/03/27 22:41:35 [review_engine.go:102] Error running golangci-lint: failed to run golangci-lint: exec: "golangci-lint": executable file not found in $PATH
+INFO: 2025/03/27 22:41:35 [review_engine.go:102] Running tool: staticcheck
+ERROR: 2025/03/27 22:41:35 [review_engine.go:102] Error running staticcheck: failed to run staticcheck: exec: "staticcheck": executable file not found in $PATH
+INFO: 2025/03/27 22:41:35 [review_engine.go:102] Running tool: gosec
+ERROR: 2025/03/27 22:41:35 [review_engine.go:102] Error running gosec: failed to run gosec: exec: "gosec": executable file not found in $PATH
+INFO: 2025/03/27 22:41:35 [review_engine.go:136] Found dependency files: [/tmp/gollora-test2/package.json]
+INFO: 2025/03/27 22:41:35 [review_engine.go:136] Running dependency checker: owasp-dependency-check
+ERROR: 2025/03/27 22:41:35 [review_engine.go:136] Error running OWASP Dependency-Check: failed to run OWASP Dependency-Check: exec: "dependency-check": executable file not found in $PATH
+INFO: 2025/03/27 22:41:35 [review_engine.go:136] Running dependency checker: deps.dev
+ERROR: 2025/03/27 22:41:35 [review_engine.go:136] Error running deps.dev check: failed to read dependency file: open /tmp/gollora-test2/tmp/gollora-test2/package.json: no such file or directory
+INFO: 2025/03/27 22:41:45 [main.go:289] Analysis complete. Found 7 issues (0 critical, 5 error, 2 warning)
+INFO: 2025/03/27 22:41:45 [main.go:80] JSON report saved to: /tmp/gollora-test2/results/code-review-20250327-224135-abcdef.json
+INFO: 2025/03/27 22:41:45 [main.go:80] Markdown report saved to: /tmp/gollora-test2/results/code-review-20250327-224135-abcdef.md
+INFO: 2025/03/27 22:41:45 [main.go:80] Analysis complete! Found 7 issues
+INFO: 2025/03/27 22:52:42 [proc.go:271] Starting Gollora
+INFO: 2025/03/27 22:52:42 [asm_arm64.s:1222] Starting server on 0.0.0.0:8080
+INFO: 2025/03/27 22:53:18 [main.go:75] Shutting down server...
+INFO: 2025/03/27 22:53:18 [main.go:75] Server stopped
+INFO: 2025/03/27 22:53:31 [proc.go:271] Starting Gollora
+INFO: 2025/03/27 22:53:31 [asm_arm64.s:1222] Starting server on 0.0.0.0:8080
+INFO: 2025/03/27 22:53:50 [main.go:75] Shutting down server...
+INFO: 2025/03/27 22:53:50 [main.go:75] Server stopped
+INFO: 2025/03/27 22:53:55 [proc.go:271] Starting Gollora
+INFO: 2025/03/27 22:53:55 [asm_arm64.s:1222] Starting server on 0.0.0.0:8080
+INFO: 2025/03/27 22:54:54 [main.go:75] Shutting down server...
+INFO: 2025/03/27 22:54:54 [main.go:75] Server stopped
+INFO: 2025/03/27 22:58:22 [proc.go:271] Starting Gollora
+INFO: 2025/03/27 22:58:22 [asm_arm64.s:1222] Starting server on 0.0.0.0:8080
+INFO: 2025/03/27 23:05:41 [main.go:75] Shutting down server...
+INFO: 2025/03/27 23:05:41 [main.go:75] Server stopped
+INFO: 2025/03/27 23:16:04 [proc.go:271] Starting Gollora
+INFO: 2025/03/27 23:16:04 [asm_arm64.s:1222] Starting server on 0.0.0.0:8080
+INFO: 2025/03/27 23:30:47 [main.go:75] Shutting down server...
+INFO: 2025/03/27 23:30:47 [main.go:75] Server stopped
+INFO: 2025/03/27 23:31:34 [proc.go:271] Starting Gollora
+INFO: 2025/03/27 23:31:34 [asm_arm64.s:1222] Starting server on 0.0.0.0:8080
+INFO: 2025/03/27 23:39:44 [webhook.go:136] Starting analysis process for event: push
+INFO: 2025/03/27 23:39:44 [main.go:334] Cloning repository https://github.com/EuclidStellar/gollora-test.git to /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-2971371389
+INFO: 2025/03/27 23:39:44 [fetcher.go:35] Cloning repository: https://github.com/EuclidStellar/gollora-test.git
+INFO: 2025/03/27 23:39:45 [webhook.go:136] Starting analysis process for event: pull_request
+INFO: 2025/03/27 23:39:45 [main.go:334] Cloning repository https://github.com/EuclidStellar/gollora-test.git to /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3920583559
+INFO: 2025/03/27 23:39:45 [fetcher.go:35] Cloning repository: https://github.com/EuclidStellar/gollora-test.git
+INFO: 2025/03/27 23:39:45 [main.go:334] Getting changed files between c97f9c0eecf2f3e6fca48712cf1821a1407839c8 and 3ecd46bcbe64f9a3fb8b8ade005e9a29d5fdaaa9
+ERROR: 2025/03/27 23:39:45 [webhook.go:136] Failed to fetch code: failed to get changed files: failed to get changed files: exit status 128
+INFO: 2025/03/27 23:39:46 [main.go:334] Getting changed files between d56d2aeef7bdf43b4945957e87234c0fd004efb6 and 3ecd46bcbe64f9a3fb8b8ade005e9a29d5fdaaa9
+ERROR: 2025/03/27 23:39:46 [webhook.go:136] Failed to fetch code: failed to get changed files: failed to get changed files: exit status 128
+INFO: 2025/03/27 23:39:57 [webhook.go:136] Starting analysis process for event: pull_request
+INFO: 2025/03/27 23:39:57 [main.go:334] Cloning repository https://github.com/EuclidStellar/gollora-test.git to /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3836567739
+INFO: 2025/03/27 23:39:57 [fetcher.go:35] Cloning repository: https://github.com/EuclidStellar/gollora-test.git
+INFO: 2025/03/27 23:39:59 [main.go:334] Getting changed files between d56d2aeef7bdf43b4945957e87234c0fd004efb6 and 3ecd46bcbe64f9a3fb8b8ade005e9a29d5fdaaa9
+ERROR: 2025/03/27 23:39:59 [webhook.go:136] Failed to fetch code: failed to get changed files: failed to get changed files: exit status 128
+INFO: 2025/03/27 23:40:51 [webhook.go:136] Starting analysis process for event: pull_request
+INFO: 2025/03/27 23:40:51 [main.go:334] Cloning repository https://github.com/EuclidStellar/gollora-test.git to /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-1792918604
+INFO: 2025/03/27 23:40:51 [fetcher.go:35] Cloning repository: https://github.com/EuclidStellar/gollora-test.git
+INFO: 2025/03/27 23:40:52 [main.go:334] Getting changed files between d56d2aeef7bdf43b4945957e87234c0fd004efb6 and 3ecd46bcbe64f9a3fb8b8ade005e9a29d5fdaaa9
+ERROR: 2025/03/27 23:40:52 [webhook.go:136] Failed to fetch code: failed to get changed files: failed to get changed files: exit status 128
+INFO: 2025/03/27 23:44:45 [main.go:75] Shutting down server...
+INFO: 2025/03/27 23:44:45 [main.go:75] Server stopped
+INFO: 2025/03/27 23:44:53 [proc.go:271] Starting Gollora
+INFO: 2025/03/27 23:44:53 [asm_arm64.s:1222] Starting server on 0.0.0.0:8080
+INFO: 2025/03/27 23:45:04 [webhook.go:136] Starting analysis process for event: pull_request
+INFO: 2025/03/27 23:45:04 [main.go:334] Cloning repository https://github.com/EuclidStellar/gollora-test.git to /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3341992834
+INFO: 2025/03/27 23:45:04 [fetcher.go:35] Cloning repository: https://github.com/EuclidStellar/gollora-test.git
+INFO: 2025/03/27 23:45:05 [main.go:334] Getting changed files between d56d2aeef7bdf43b4945957e87234c0fd004efb6 and 3ecd46bcbe64f9a3fb8b8ade005e9a29d5fdaaa9
+WARN: 2025/03/27 23:45:05 [fetcher.go:52] Direct git diff failed: exit status 128. Trying alternative method.
+INFO: 2025/03/27 23:45:07 [main.go:334] Found 0 changed files
+INFO: 2025/03/27 23:45:07 [main.go:359] Starting code analysis for EuclidStellar/gollora-test
+INFO: 2025/03/27 23:45:07 [asm_arm64.s:1222] Running AI analysis
+INFO: 2025/03/27 23:45:07 [asm_arm64.s:1222] Checking dependencies
+INFO: 2025/03/27 23:45:07 [review_engine.go:169] Running AI analysis on 0 files
+INFO: 2025/03/27 23:45:07 [review_engine.go:136] No dependency files found
+INFO: 2025/03/27 23:45:10 [main.go:359] Analysis complete. Found 0 issues (0 critical, 0 error, 0 warning)
+INFO: 2025/03/27 23:45:10 [response_handler.go:34] Aggregating results
+INFO: 2025/03/27 23:45:10 [aggregator.go:28] Removed 0 duplicate issues
+INFO: 2025/03/27 23:45:10 [response_handler.go:80] Filtered 0 issues by threshold warning
+INFO: 2025/03/27 23:45:11 [response_handler.go:53] Successfully sent 1 comments to GitHub PR #2
+INFO: 2025/03/27 23:45:11 [webhook.go:136] Analysis process completed successfully
+INFO: 2025/03/27 23:45:19 [webhook.go:136] Starting analysis process for event: pull_request
+INFO: 2025/03/27 23:45:19 [main.go:334] Cloning repository https://github.com/EuclidStellar/gollora-test.git to /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-135702653
+INFO: 2025/03/27 23:45:19 [fetcher.go:35] Cloning repository: https://github.com/EuclidStellar/gollora-test.git
+INFO: 2025/03/27 23:45:20 [main.go:334] Getting changed files between d56d2aeef7bdf43b4945957e87234c0fd004efb6 and 3ecd46bcbe64f9a3fb8b8ade005e9a29d5fdaaa9
+WARN: 2025/03/27 23:45:20 [fetcher.go:52] Direct git diff failed: exit status 128. Trying alternative method.
+INFO: 2025/03/27 23:45:22 [main.go:334] Found 0 changed files
+INFO: 2025/03/27 23:45:22 [main.go:359] Starting code analysis for EuclidStellar/gollora-test
+INFO: 2025/03/27 23:45:22 [asm_arm64.s:1222] Running AI analysis
+INFO: 2025/03/27 23:45:22 [review_engine.go:169] Running AI analysis on 0 files
+INFO: 2025/03/27 23:45:22 [asm_arm64.s:1222] Checking dependencies
+INFO: 2025/03/27 23:45:22 [review_engine.go:136] No dependency files found
+INFO: 2025/03/27 23:45:24 [main.go:359] Analysis complete. Found 0 issues (0 critical, 0 error, 0 warning)
+INFO: 2025/03/27 23:45:24 [response_handler.go:34] Aggregating results
+INFO: 2025/03/27 23:45:24 [aggregator.go:28] Removed 0 duplicate issues
+INFO: 2025/03/27 23:45:24 [response_handler.go:80] Filtered 0 issues by threshold warning
+INFO: 2025/03/27 23:45:25 [response_handler.go:53] Successfully sent 1 comments to GitHub PR #3
+INFO: 2025/03/27 23:45:25 [webhook.go:136] Analysis process completed successfully
+INFO: 2025/03/27 23:46:56 [webhook.go:136] Starting analysis process for event: pull_request
+INFO: 2025/03/27 23:46:56 [main.go:334] Cloning repository https://github.com/EuclidStellar/gollora-test.git to /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3488674599
+INFO: 2025/03/27 23:46:56 [fetcher.go:35] Cloning repository: https://github.com/EuclidStellar/gollora-test.git
+INFO: 2025/03/27 23:46:57 [main.go:334] Getting changed files between d56d2aeef7bdf43b4945957e87234c0fd004efb6 and 3ecd46bcbe64f9a3fb8b8ade005e9a29d5fdaaa9
+WARN: 2025/03/27 23:46:57 [fetcher.go:52] Direct git diff failed: exit status 128. Trying alternative method.
+INFO: 2025/03/27 23:46:59 [main.go:334] Found 0 changed files
+INFO: 2025/03/27 23:46:59 [main.go:359] Starting code analysis for EuclidStellar/gollora-test
+INFO: 2025/03/27 23:46:59 [asm_arm64.s:1222] Running AI analysis
+INFO: 2025/03/27 23:46:59 [asm_arm64.s:1222] Checking dependencies
+INFO: 2025/03/27 23:46:59 [review_engine.go:169] Running AI analysis on 0 files
+INFO: 2025/03/27 23:46:59 [review_engine.go:136] No dependency files found
+INFO: 2025/03/27 23:47:01 [main.go:359] Analysis complete. Found 0 issues (0 critical, 0 error, 0 warning)
+INFO: 2025/03/27 23:47:01 [response_handler.go:34] Aggregating results
+INFO: 2025/03/27 23:47:01 [aggregator.go:28] Removed 0 duplicate issues
+INFO: 2025/03/27 23:47:01 [response_handler.go:80] Filtered 0 issues by threshold warning
+INFO: 2025/03/27 23:47:01 [response_handler.go:53] Successfully sent 1 comments to GitHub PR #3
+INFO: 2025/03/27 23:47:01 [webhook.go:136] Analysis process completed successfully
+INFO: 2025/03/27 23:52:06 [main.go:75] Shutting down server...
+INFO: 2025/03/27 23:52:06 [main.go:75] Server stopped
+INFO: 2025/03/27 23:52:14 [proc.go:271] Starting Gollora
+INFO: 2025/03/27 23:52:14 [asm_arm64.s:1222] Starting server on 0.0.0.0:8080
+INFO: 2025/03/27 23:52:28 [webhook.go:136] Starting analysis process for event: pull_request
+INFO: 2025/03/27 23:52:28 [main.go:334] Cloning repository https://github.com/EuclidStellar/gollora-test.git to /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-1947645436
+INFO: 2025/03/27 23:52:28 [fetcher.go:36] Cloning repository: https://github.com/EuclidStellar/gollora-test.git
+INFO: 2025/03/27 23:52:29 [main.go:334] Getting changed files between d56d2aeef7bdf43b4945957e87234c0fd004efb6 and 3ecd46bcbe64f9a3fb8b8ade005e9a29d5fdaaa9
+WARN: 2025/03/27 23:52:29 [fetcher.go:53] Direct git diff failed: exit status 128. Trying alternative method.
+INFO: 2025/03/27 23:52:30 [main.go:334] Found 0 changed files
+WARN: 2025/03/27 23:52:30 [main.go:334] No changed files found. Analyzing all files in the repository.
+INFO: 2025/03/27 23:52:30 [main.go:334] Found 1 files in repository
+INFO: 2025/03/27 23:52:30 [main.go:359] Starting code analysis for EuclidStellar/gollora-test
+INFO: 2025/03/27 23:52:30 [asm_arm64.s:1222] Running AI analysis
+INFO: 2025/03/27 23:52:30 [asm_arm64.s:1222] Checking dependencies
+INFO: 2025/03/27 23:52:30 [asm_arm64.s:1222] Analyzing 1 go files
+INFO: 2025/03/27 23:52:30 [review_engine.go:169] Running AI analysis on 1 files
+INFO: 2025/03/27 23:52:30 [review_engine.go:102] Analyzing 1 Go files
+INFO: 2025/03/27 23:52:30 [review_engine.go:102] Running tool: golangci-lint
+INFO: 2025/03/27 23:52:30 [review_engine.go:136] No dependency files found
+ERROR: 2025/03/27 23:52:30 [review_engine.go:102] Error running golangci-lint: failed to run golangci-lint: exec: "golangci-lint": executable file not found in $PATH
+INFO: 2025/03/27 23:52:30 [review_engine.go:102] Running tool: staticcheck
+ERROR: 2025/03/27 23:52:30 [review_engine.go:102] Error running staticcheck: failed to run staticcheck: exec: "staticcheck": executable file not found in $PATH
+INFO: 2025/03/27 23:52:30 [review_engine.go:102] Running tool: gosec
+ERROR: 2025/03/27 23:52:30 [review_engine.go:102] Error running gosec: failed to run gosec: exec: "gosec": executable file not found in $PATH
+INFO: 2025/03/27 23:52:34 [main.go:359] Analysis complete. Found 0 issues (0 critical, 0 error, 0 warning)
+INFO: 2025/03/27 23:52:34 [response_handler.go:34] Aggregating results
+INFO: 2025/03/27 23:52:34 [aggregator.go:28] Removed 0 duplicate issues
+INFO: 2025/03/27 23:52:34 [response_handler.go:80] Filtered 0 issues by threshold warning
+INFO: 2025/03/27 23:52:36 [response_handler.go:53] Successfully sent 1 comments to GitHub PR #4
+INFO: 2025/03/27 23:52:36 [webhook.go:136] Analysis process completed successfully
+INFO: 2025/03/27 23:53:00 [main.go:75] Shutting down server...
+INFO: 2025/03/27 23:53:00 [main.go:75] Server stopped
+INFO: 2025/03/27 23:53:04 [proc.go:271] Starting Gollora
+INFO: 2025/03/27 23:53:04 [asm_arm64.s:1222] Starting server on 0.0.0.0:8080
+INFO: 2025/03/27 23:53:08 [webhook.go:136] Starting analysis process for event: pull_request
+INFO: 2025/03/27 23:53:08 [main.go:334] Cloning repository https://github.com/EuclidStellar/gollora-test.git to /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3583403551
+INFO: 2025/03/27 23:53:08 [fetcher.go:35] Cloning repository: https://github.com/EuclidStellar/gollora-test.git
+INFO: 2025/03/27 23:53:10 [main.go:334] Getting changed files between d56d2aeef7bdf43b4945957e87234c0fd004efb6 and 3ecd46bcbe64f9a3fb8b8ade005e9a29d5fdaaa9
+WARN: 2025/03/27 23:53:10 [fetcher.go:52] Direct git diff failed: exit status 128. Trying alternative method.
+INFO: 2025/03/27 23:53:11 [main.go:334] Found 0 changed files
+WARN: 2025/03/27 23:53:11 [main.go:334] No changed files found. Analyzing all files in the repository.
+INFO: 2025/03/27 23:53:11 [main.go:334] Found 1 files in repository
+INFO: 2025/03/27 23:53:11 [main.go:359] Starting code analysis for EuclidStellar/gollora-test
+INFO: 2025/03/27 23:53:11 [asm_arm64.s:1222] Running AI analysis
+INFO: 2025/03/27 23:53:11 [asm_arm64.s:1222] Analyzing 1 go files
+INFO: 2025/03/27 23:53:11 [asm_arm64.s:1222] Checking dependencies
+INFO: 2025/03/27 23:53:11 [review_engine.go:169] Running AI analysis on 1 files
+INFO: 2025/03/27 23:53:11 [review_engine.go:102] Analyzing 1 Go files
+INFO: 2025/03/27 23:53:11 [review_engine.go:102] Running tool: golangci-lint
+ERROR: 2025/03/27 23:53:11 [review_engine.go:102] Error running golangci-lint: failed to run golangci-lint: exec: "golangci-lint": executable file not found in $PATH
+INFO: 2025/03/27 23:53:11 [review_engine.go:102] Running tool: staticcheck
+ERROR: 2025/03/27 23:53:11 [review_engine.go:102] Error running staticcheck: failed to run staticcheck: exec: "staticcheck": executable file not found in $PATH
+INFO: 2025/03/27 23:53:11 [review_engine.go:102] Running tool: gosec
+ERROR: 2025/03/27 23:53:11 [review_engine.go:102] Error running gosec: failed to run gosec: exec: "gosec": executable file not found in $PATH
+INFO: 2025/03/27 23:53:11 [review_engine.go:136] No dependency files found
+INFO: 2025/03/27 23:53:13 [main.go:359] Analysis complete. Found 0 issues (0 critical, 0 error, 0 warning)
+INFO: 2025/03/27 23:53:13 [response_handler.go:34] Aggregating results
+INFO: 2025/03/27 23:53:13 [aggregator.go:28] Removed 0 duplicate issues
+INFO: 2025/03/27 23:53:13 [response_handler.go:80] Filtered 0 issues by threshold warning
+INFO: 2025/03/27 23:53:14 [response_handler.go:53] Successfully sent 1 comments to GitHub PR #4
+INFO: 2025/03/27 23:53:14 [webhook.go:136] Analysis process completed successfully
+INFO: 2025/03/27 23:53:50 [main.go:75] Shutting down server...
+INFO: 2025/03/27 23:53:50 [main.go:75] Server stopped
+INFO: 2025/03/27 23:53:54 [proc.go:271] Starting Gollora
+INFO: 2025/03/27 23:53:54 [asm_arm64.s:1222] Starting server on 0.0.0.0:8080
+INFO: 2025/03/27 23:54:07 [main.go:75] Shutting down server...
+INFO: 2025/03/27 23:54:07 [main.go:75] Server stopped
+INFO: 2025/03/27 23:54:10 [proc.go:271] Starting Gollora
+INFO: 2025/03/27 23:54:10 [asm_arm64.s:1222] Starting server on 0.0.0.0:8080
+INFO: 2025/03/27 23:54:20 [webhook.go:136] Starting analysis process for event: pull_request
+INFO: 2025/03/27 23:54:20 [main.go:334] Cloning repository https://github.com/EuclidStellar/gollora-test.git to /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-496764622
+INFO: 2025/03/27 23:54:20 [fetcher.go:35] Cloning repository: https://github.com/EuclidStellar/gollora-test.git
+INFO: 2025/03/27 23:54:21 [main.go:334] Getting changed files between d56d2aeef7bdf43b4945957e87234c0fd004efb6 and 3ecd46bcbe64f9a3fb8b8ade005e9a29d5fdaaa9
+WARN: 2025/03/27 23:54:21 [fetcher.go:52] Direct git diff failed: exit status 128. Trying alternative method.
+INFO: 2025/03/27 23:54:23 [main.go:334] Found 0 changed files
+INFO: 2025/03/27 23:54:23 [main.go:359] Starting code analysis for EuclidStellar/gollora-test
+INFO: 2025/03/27 23:54:23 [asm_arm64.s:1222] Running AI analysis
+INFO: 2025/03/27 23:54:23 [review_engine.go:169] Running AI analysis on 0 files
+INFO: 2025/03/27 23:54:23 [asm_arm64.s:1222] Checking dependencies
+INFO: 2025/03/27 23:54:23 [review_engine.go:136] No dependency files found
+INFO: 2025/03/27 23:54:26 [main.go:359] Analysis complete. Found 0 issues (0 critical, 0 error, 0 warning)
+INFO: 2025/03/27 23:54:26 [response_handler.go:34] Aggregating results
+INFO: 2025/03/27 23:54:26 [aggregator.go:28] Removed 0 duplicate issues
+INFO: 2025/03/27 23:54:26 [response_handler.go:80] Filtered 0 issues by threshold warning
+INFO: 2025/03/27 23:54:27 [response_handler.go:53] Successfully sent 1 comments to GitHub PR #4
+INFO: 2025/03/27 23:54:27 [webhook.go:136] Analysis process completed successfully
+INFO: 2025/03/27 23:54:48 [webhook.go:136] Starting analysis process for event: pull_request
+INFO: 2025/03/27 23:54:48 [main.go:334] Cloning repository https://github.com/EuclidStellar/gollora-test.git to /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-1055096885
+INFO: 2025/03/27 23:54:48 [fetcher.go:35] Cloning repository: https://github.com/EuclidStellar/gollora-test.git
+INFO: 2025/03/27 23:54:49 [main.go:334] Getting changed files between d56d2aeef7bdf43b4945957e87234c0fd004efb6 and 3ecd46bcbe64f9a3fb8b8ade005e9a29d5fdaaa9
+WARN: 2025/03/27 23:54:49 [fetcher.go:52] Direct git diff failed: exit status 128. Trying alternative method.
+INFO: 2025/03/27 23:54:51 [main.go:334] Found 0 changed files
+INFO: 2025/03/27 23:54:51 [main.go:359] Starting code analysis for EuclidStellar/gollora-test
+INFO: 2025/03/27 23:54:51 [asm_arm64.s:1222] Checking dependencies
+INFO: 2025/03/27 23:54:51 [asm_arm64.s:1222] Running AI analysis
+INFO: 2025/03/27 23:54:51 [review_engine.go:169] Running AI analysis on 0 files
+INFO: 2025/03/27 23:54:51 [review_engine.go:136] No dependency files found
+INFO: 2025/03/27 23:54:54 [main.go:359] Analysis complete. Found 0 issues (0 critical, 0 error, 0 warning)
+INFO: 2025/03/27 23:54:54 [response_handler.go:34] Aggregating results
+INFO: 2025/03/27 23:54:54 [aggregator.go:28] Removed 0 duplicate issues
+INFO: 2025/03/27 23:54:54 [response_handler.go:80] Filtered 0 issues by threshold warning
+INFO: 2025/03/27 23:54:55 [response_handler.go:53] Successfully sent 1 comments to GitHub PR #4
+INFO: 2025/03/27 23:54:55 [webhook.go:136] Analysis process completed successfully
+INFO: 2025/03/27 23:58:00 [main.go:75] Shutting down server...
+INFO: 2025/03/27 23:58:00 [main.go:75] Server stopped
+INFO: 2025/03/27 23:58:04 [proc.go:271] Starting Gollora
+INFO: 2025/03/27 23:58:04 [asm_arm64.s:1222] Starting server on 0.0.0.0:8080
+INFO: 2025/03/27 23:58:24 [webhook.go:136] Starting analysis process for event: pull_request
+INFO: 2025/03/27 23:58:24 [main.go:334] Cloning repository https://github.com/EuclidStellar/gollora-test.git to /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-988855515
+INFO: 2025/03/27 23:58:24 [fetcher.go:35] Cloning repository: https://github.com/EuclidStellar/gollora-test.git
+INFO: 2025/03/27 23:58:25 [main.go:334] Getting changed files between d56d2aeef7bdf43b4945957e87234c0fd004efb6 and 3ecd46bcbe64f9a3fb8b8ade005e9a29d5fdaaa9
+WARN: 2025/03/27 23:58:25 [fetcher.go:52] Direct git diff failed: exit status 128. Trying alternative method.
+INFO: 2025/03/27 23:58:27 [main.go:334] Found 0 changed files
+INFO: 2025/03/27 23:58:27 [main.go:359] Starting code analysis for EuclidStellar/gollora-test
+INFO: 2025/03/27 23:58:27 [asm_arm64.s:1222] Running AI analysis
+INFO: 2025/03/27 23:58:27 [asm_arm64.s:1222] Checking dependencies
+INFO: 2025/03/27 23:58:27 [review_engine.go:169] Running AI analysis on 0 files
+INFO: 2025/03/27 23:58:27 [review_engine.go:136] No dependency files found
+INFO: 2025/03/27 23:58:30 [main.go:359] Analysis complete. Found 0 issues (0 critical, 0 error, 0 warning)
+INFO: 2025/03/27 23:58:30 [response_handler.go:34] Aggregating results
+INFO: 2025/03/27 23:58:30 [aggregator.go:28] Removed 0 duplicate issues
+INFO: 2025/03/27 23:58:30 [response_handler.go:80] Filtered 0 issues by threshold warning
+INFO: 2025/03/27 23:58:31 [response_handler.go:53] Successfully sent 1 comments to GitHub PR #5
+INFO: 2025/03/27 23:58:31 [webhook.go:136] Analysis process completed successfully
+INFO: 2025/03/28 00:03:10 [main.go:75] Shutting down server...
+INFO: 2025/03/28 00:03:10 [main.go:75] Server stopped

@@ -1,0 +1,23 @@
+languages:
+  go:
+    enabled: true
+    tools:
+      - name: "golangci-lint"
+        command: "golangci-lint"
+        args: ["run", "--format=json"]
+        enabled: true
+      - name: "staticcheck"
+        command: "staticcheck"
+        args: ["-f", "json"]
+        enabled: false
+      - name: "gosec"
+        command: "gosec"
+        args: ["-fmt=json", "-quiet", "./..."]
+        enabled: false
+  python:
+    enabled: true
+    tools:
+      - name: "flake8"
+        command: "flake8"
+        args: ["--format=default", "."]
+        enabled: true

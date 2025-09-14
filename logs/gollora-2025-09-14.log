@@ -1,0 +1,1730 @@
+INFO: 2025/09/14 16:25:59 [proc.go:283] Starting Gollora
+WARN: 2025/09/14 16:26:01 [path.go:345] Failed to generate embedding for chunk in .DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:01 [path.go:345] Failed to generate embedding for chunk in .DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:03 [path.go:345] Failed to generate embedding for chunk in .DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:03 [path.go:345] Failed to generate embedding for chunk in .DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:04 [path.go:345] Failed to generate embedding for chunk in .DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:05 [path.go:345] Failed to generate embedding for chunk in .DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:06 [path.go:345] Failed to generate embedding for chunk in .DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:06 [path.go:345] Failed to generate embedding for chunk in .DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:07 [path.go:345] Failed to generate embedding for chunk in .DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:08 [path.go:345] Failed to generate embedding for chunk in .DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:09 [path.go:345] Failed to generate embedding for chunk in .DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:10 [path.go:345] Failed to generate embedding for chunk in .DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:11 [path.go:345] Failed to generate embedding for chunk in .DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:11 [path.go:345] Failed to generate embedding for chunk in .DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:12 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:13 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:14 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:15 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:16 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:16 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:17 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:18 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:19 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:20 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:21 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:21 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:22 [path.go:345] Failed to generate embedding for chunk in ai/ai.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:23 [path.go:345] Failed to generate embedding for chunk in ai/ai.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:24 [path.go:345] Failed to generate embedding for chunk in ai/ai.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:24 [path.go:345] Failed to generate embedding for chunk in ai/ai.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:26 [path.go:345] Failed to generate embedding for chunk in ai/ai.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:26 [path.go:345] Failed to generate embedding for chunk in ai/ai.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:27 [path.go:345] Failed to generate embedding for chunk in ai/ai.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:28 [path.go:345] Failed to generate embedding for chunk in ai/ai.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:29 [path.go:345] Failed to generate embedding for chunk in ai/ai.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:30 [path.go:345] Failed to generate embedding for chunk in analyzers/.DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:30 [path.go:345] Failed to generate embedding for chunk in analyzers/.DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:31 [path.go:345] Failed to generate embedding for chunk in analyzers/.DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:32 [path.go:345] Failed to generate embedding for chunk in analyzers/.DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:26:33 [path.go:345] Failed to generate embedding for chunk in analyzers/.DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+INFO: 2025/09/14 16:27:28 [proc.go:283] Starting Gollora
+WARN: 2025/09/14 16:27:29 [path.go:345] Failed to generate embedding for chunk in .DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:27:30 [path.go:345] Failed to generate embedding for chunk in .DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:27:30 [path.go:345] Failed to generate embedding for chunk in .DS_Store: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+INFO: 2025/09/14 16:46:48 [proc.go:283] Starting Gollora
+WARN: 2025/09/14 16:46:50 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:46:51 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:46:52 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:46:52 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:46:54 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:46:54 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:46:55 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:46:56 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:46:57 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:46:57 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:46:59 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:46:59 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:00 [path.go:345] Failed to generate embedding for chunk in ai/ai.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:01 [path.go:345] Failed to generate embedding for chunk in ai/ai.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:02 [path.go:345] Failed to generate embedding for chunk in ai/ai.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:02 [path.go:345] Failed to generate embedding for chunk in ai/ai.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:04 [path.go:345] Failed to generate embedding for chunk in ai/ai.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:04 [path.go:345] Failed to generate embedding for chunk in ai/ai.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:05 [path.go:345] Failed to generate embedding for chunk in ai/ai.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:06 [path.go:345] Failed to generate embedding for chunk in ai/ai.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:07 [path.go:345] Failed to generate embedding for chunk in ai/ai.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:07 [path.go:345] Failed to generate embedding for chunk in ai/ai.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:09 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:09 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:10 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:11 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:12 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:12 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:14 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:14 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:15 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:16 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:17 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:17 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:18 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:19 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:20 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:21 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:22 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:22 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:23 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:24 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:25 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:26 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:27 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:27 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:28 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:29 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:30 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:31 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:32 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:32 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:33 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:34 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:35 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:36 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:37 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:37 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:38 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:39 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:40 [path.go:345] Failed to generate embedding for chunk in analyzers/ai_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:41 [path.go:345] Failed to generate embedding for chunk in analyzers/golang.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:41 [path.go:345] Failed to generate embedding for chunk in analyzers/golang.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:42 [path.go:345] Failed to generate embedding for chunk in analyzers/golang.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:43 [path.go:345] Failed to generate embedding for chunk in analyzers/golang.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:44 [path.go:345] Failed to generate embedding for chunk in analyzers/golang.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:45 [path.go:345] Failed to generate embedding for chunk in analyzers/golang.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:46 [path.go:345] Failed to generate embedding for chunk in analyzers/golang.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:46 [path.go:345] Failed to generate embedding for chunk in analyzers/golang.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:48 [path.go:345] Failed to generate embedding for chunk in analyzers/golang.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:48 [path.go:345] Failed to generate embedding for chunk in analyzers/golang.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:49 [path.go:345] Failed to generate embedding for chunk in analyzers/golang.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:50 [path.go:345] Failed to generate embedding for chunk in analyzers/golang.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:51 [path.go:345] Failed to generate embedding for chunk in analyzers/golang.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:52 [path.go:345] Failed to generate embedding for chunk in analyzers/golang.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:52 [path.go:345] Failed to generate embedding for chunk in analyzers/golang.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:54 [path.go:345] Failed to generate embedding for chunk in analyzers/java.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:54 [path.go:345] Failed to generate embedding for chunk in analyzers/java.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:55 [path.go:345] Failed to generate embedding for chunk in analyzers/java.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:56 [path.go:345] Failed to generate embedding for chunk in analyzers/python_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:57 [path.go:345] Failed to generate embedding for chunk in analyzers/python_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:57 [path.go:345] Failed to generate embedding for chunk in analyzers/python_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:58 [path.go:345] Failed to generate embedding for chunk in analyzers/python_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:47:59 [path.go:345] Failed to generate embedding for chunk in analyzers/python_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:48:00 [path.go:345] Failed to generate embedding for chunk in analyzers/python_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:48:01 [path.go:345] Failed to generate embedding for chunk in analyzers/python_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:48:02 [path.go:345] Failed to generate embedding for chunk in analyzers/python_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:48:02 [path.go:345] Failed to generate embedding for chunk in analyzers/python_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:48:04 [path.go:345] Failed to generate embedding for chunk in analyzers/python_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:48:04 [path.go:345] Failed to generate embedding for chunk in analyzers/python_analyzer.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:48:05 [path.go:345] Failed to generate embedding for chunk in models/result.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:48:06 [path.go:345] Failed to generate embedding for chunk in models/result.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:48:07 [path.go:345] Failed to generate embedding for chunk in models/result.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+INFO: 2025/09/14 16:48:11 [proc.go:283] Starting Gollora
+WARN: 2025/09/14 16:48:13 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:48:13 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:48:14 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:48:15 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:48:16 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+WARN: 2025/09/14 16:48:17 [path.go:345] Failed to generate embedding for chunk in agent/agent.go: gemini embedding API error: 403 Forbidden - {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+INFO: 2025/09/14 16:51:46 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 16:56:15 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 17:09:18 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 17:12:04 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 17:12:29 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 17:12:29 [agent.go:51] Not a git repository or git command failed. Using file-based hashing for cache state.
+INFO: 2025/09/14 17:15:06 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 17:15:06 [agent.go:51] Not a git repository or git command failed. Using file-based hashing for cache state.
+INFO: 2025/09/14 17:15:26 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 17:15:26 [agent.go:51] Not a git repository or git command failed. Using file-based hashing for cache state.
+INFO: 2025/09/14 17:23:16 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 17:23:16 [asm_arm64.s:1223] Starting server on 0.0.0.0:8080
+INFO: 2025/09/14 17:23:20 [main.go:73] Shutting down server...
+INFO: 2025/09/14 17:23:20 [main.go:73] Server stopped
+INFO: 2025/09/14 17:23:26 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 17:23:26 [asm_arm64.s:1223] Starting server on 0.0.0.0:8080
+INFO: 2025/09/14 17:24:53 [main.go:73] Shutting down server...
+INFO: 2025/09/14 17:24:53 [main.go:73] Server stopped
+INFO: 2025/09/14 17:25:00 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 17:25:00 [asm_arm64.s:1223] Starting server on 0.0.0.0:8080
+INFO: 2025/09/14 17:31:22 [main.go:73] Shutting down server...
+INFO: 2025/09/14 17:31:22 [main.go:73] Server stopped
+INFO: 2025/09/14 17:31:23 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 17:31:23 [asm_arm64.s:1223] Starting server on 0.0.0.0:8080
+INFO: 2025/09/14 17:31:25 [main.go:73] Shutting down server...
+INFO: 2025/09/14 17:31:25 [main.go:73] Server stopped
+INFO: 2025/09/14 17:31:29 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 17:31:29 [asm_arm64.s:1223] Starting server on 0.0.0.0:8080
+INFO: 2025/09/14 17:32:14 [main.go:73] Shutting down server...
+INFO: 2025/09/14 17:32:14 [main.go:73] Server stopped
+INFO: 2025/09/14 17:38:01 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 17:38:01 [asm_arm64.s:1223] Starting server on 0.0.0.0:8080
+INFO: 2025/09/14 17:41:52 [main.go:73] Shutting down server...
+INFO: 2025/09/14 17:41:52 [main.go:73] Server stopped
+INFO: 2025/09/14 17:41:53 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 17:41:53 [asm_arm64.s:1223] Starting server on 0.0.0.0:8080
+INFO: 2025/09/14 17:41:54 [main.go:73] Shutting down server...
+INFO: 2025/09/14 17:41:54 [main.go:73] Server stopped
+INFO: 2025/09/14 17:43:39 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 17:43:39 [asm_arm64.s:1223] Starting server on 0.0.0.0:8080
+INFO: 2025/09/14 17:47:13 [main.go:73] Shutting down server...
+INFO: 2025/09/14 17:47:13 [main.go:73] Server stopped
+INFO: 2025/09/14 17:47:32 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 17:47:32 [agent.go:54] Not a git repository or git command failed. Using file-based hashing for cache state.
+INFO: 2025/09/14 18:28:50 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 18:28:50 [agent.go:54] Not a git repository or git command failed. Using file-based hashing for cache state.
+INFO: 2025/09/14 18:32:06 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 18:32:06 [asm_arm64.s:1223] Starting server on 0.0.0.0:8080
+INFO: 2025/09/14 18:32:53 [main.go:73] Shutting down server...
+INFO: 2025/09/14 18:32:53 [main.go:73] Server stopped
+INFO: 2025/09/14 18:55:24 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 18:55:24 [asm_arm64.s:1223] Starting server on 0.0.0.0:8080
+INFO: 2025/09/14 18:55:39 [webhook.go:116] Cloning repository: https://github.com/EuclidStellar/twt-cli
+INFO: 2025/09/14 18:55:56 [webhook.go:116] Checking out commit: HEAD
+INFO: 2025/09/14 18:55:56 [webhook.go:116] Base commit not provided, using HEAD~1 instead
+INFO: 2025/09/14 18:55:56 [webhook.go:116] Getting changed files between HEAD~1 and HEAD
+INFO: 2025/09/14 18:55:56 [webhook.go:116] Found 1 changed files
+INFO: 2025/09/14 18:55:56 [webhook.go:134] Starting code analysis for EuclidStellar/twt-cli
+INFO: 2025/09/14 18:55:56 [asm_arm64.s:1223] Running AI analysis
+INFO: 2025/09/14 18:55:56 [review_engine.go:99] Running AI analysis on 1 files
+INFO: 2025/09/14 18:55:56 [review_engine.go:99] Analyzing twt.go with AI
+INFO: 2025/09/14 18:55:56 [asm_arm64.s:1223] Analyzing 1 go files
+INFO: 2025/09/14 18:55:56 [review_engine.go:62] Analyzing 1 Go files
+INFO: 2025/09/14 18:55:56 [review_engine.go:62] Running tool: golangci-lint
+INFO: 2025/09/14 18:55:56 [golang.go:52] Running golangci-lint with args: [run -v twt.go]
+WARN: 2025/09/14 18:55:58 [golang.go:52] Error running command: exit status 1
+INFO: 2025/09/14 18:55:58 [golang.go:52] golangci-lint output: ../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3317470067/twt.go:113:22: Error return value of `res.Body.Close` is not checked (errcheck)
+	defer res.Body.Close()
+	                    ^
+../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3317470067/twt.go:182:28: Error return value is not checked (errcheck)
+	createDirectoryIfNotExists(dirname)
+	                          ^
+2 issues:
+* errcheck: 2
+
+level=info msg="golangci-lint has version 2.0.2 built with go1.24.1 from 2b224c2 on 2025-03-25T20:33:26Z"
+level=info msg="[config_reader] Config search paths: [./ /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3317470067 /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn /var/folders/6m /var/folders /var / /Users/euclidstellar]"
+level=info msg="maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined"
+level=info msg="[goenv] Read go env for 10.180167ms: map[string]string{\"GOCACHE\":\"/Users/euclidstellar/Library/Caches/go-build\", \"GOROOT\":\"/opt/homebrew/Cellar/go/1.24.1/libexec\"}"
+level=info msg="[lintersdb] Active 5 linters: [errcheck govet ineffassign staticcheck unused]"
+level=info msg="[loader] Go packages loading at mode 8767 (compiled_files|deps|exports_file|files|imports|types_sizes|name) took 364.5725ms"
+level=info msg="[runner/filename_unadjuster] Pre-built 0 adjustments in 1.434416ms"
+level=info msg="[linters_context/goanalysis] analyzers took 1.07863056s with top 10 stages: buildir: 945.415958ms, fact_deprecated: 27.07909ms, nilness: 20.664124ms, fact_purity: 17.545791ms, inspect: 14.450824ms, ctrlflow: 11.879785ms, typedness: 8.616325ms, SA5012: 8.091418ms, printf: 5.853707ms, tokenfileanalyzer: 2.216954ms"
+level=info msg="[runner] Processors filtering stat (in/out): nolint_filter: 2/2, uniq_by_line: 2/2, generated_file_filter: 2/2, max_from_linter: 2/2, path_prettifier: 2/2, path_absoluter: 2/2, cgo: 2/2, invalid_issue: 2/2, diff: 2/2, fixer: 2/2, source_code: 2/2, path_shortener: 2/2, severity-rules: 2/2, filename_unadjuster: 2/2, path_relativity: 2/2, exclusion_paths: 2/2, max_per_file_from_linter: 2/2, sort_results: 2/2, max_same_issues: 2/2, exclusion_rules: 2/2"
+level=info msg="[runner] processing took 468.122µs with stages: nolint_filter: 335.624µs, generated_file_filter: 46.875µs, source_code: 41.292µs, cgo: 21.999µs, sort_results: 7µs, path_relativity: 4.834µs, path_prettifier: 1.958µs, max_same_issues: 1.916µs, uniq_by_line: 1.251µs, path_shortener: 1.041µs, max_from_linter: 833ns, invalid_issue: 749ns, exclusion_paths: 624ns, exclusion_rules: 501ns, path_absoluter: 416ns, max_per_file_from_linter: 334ns, fixer: 333ns, filename_unadjuster: 292ns, diff: 167ns, severity-rules: 83ns"
+level=info msg="[runner] linters took 778.656584ms with stages: goanalysis_metalinter: 778.112791ms"
+level=info msg="File cache stats: 1 entries of total size 5.3KiB"
+level=info msg="Memory: 13 samples, avg is 103.4MB, max is 203.0MB"
+level=info msg="Execution took 1.15554225s"
+INFO: 2025/09/14 18:55:58 [golang.go:52] Found issue: twt.go:113:22 - Error return value of `res.Body.Close` is not checked (errcheck)
+INFO: 2025/09/14 18:55:58 [golang.go:52] Found issue: twt.go:182:28 - Error return value is not checked (errcheck)
+INFO: 2025/09/14 18:55:58 [golang.go:52] Found 2 issues from golangci-lint
+DEBUG: 2025/09/14 18:56:02 [ai_analyzer.go:49] Gemini raw response: [
+  {
+    "title": "Hardcoded keys file path",
+    "description": "The path to the keys file is hardcoded, making it difficult to change and potentially insecure if the file is committed to version control.",
+    "line": 28,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a configuration file to specify the keys file path."
+  },
+  {
+    "title": "Insecure storage of API keys",
+    "description": "API keys are stored in a plain text file with potentially insufficient permissions (0644). This is a major security vulnerability.",
+    "line": 226,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use a more secure method for storing API keys, such as environment variables or a dedicated secrets management system.  Change file permissions to 0600."
+  },
+  {
+    "title": "Missing error handling in `main`",
+    "description": "The `main` function lacks comprehensive error handling.  Errors during key loading or tweet posting could lead to unexpected program termination without informative error messages.",
+    "line": 50,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Wrap key loading and tweet posting in `if err != nil { ... }` blocks to handle potential errors gracefully."
+  },
+  {
+    "title": "Use of `os.Exit`",
+    "description": "The use of `os.Exit` in `loadKeys` is generally discouraged. It makes error handling less flexible and harder to manage.",
+    "line": 242,
+    "severity": "WARNING",
+    "type": "MAINTAINABILITY",
+    "fix": "Return an error from `loadKeys` and handle it in the `main` function. This allows for more controlled error handling and recovery."
+  },
+  {
+    "title": "Insufficient randomness in nonce generation",
+    "description": "The nonce generation uses `rand.Intn`, which might not be cryptographically secure enough for OAuth.  This could lead to signature collisions and security vulnerabilities.",
+    "line": 182,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Use `crypto.rand.Read` for generating cryptographically secure nonces."
+  }
+]
+DEBUG: 2025/09/14 18:56:02 [ai_analyzer.go:49] Extracted JSON content: [
+  {
+    "title": "Hardcoded keys file path",
+    "description": "The path to the keys file is hardcoded, making it difficult to change and potentially insecure if the file is committed to version control.",
+    "line": 28,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a configuration file to specify the keys file path."
+  },
+  {
+    "title": "Insecure storage of API keys",
+    "description": "API keys are stored in a plain text file with potentially insufficient permissions (0644). This is a major security vulnerability.",
+    "line": 226,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use a more secure method for storing API keys, such as environment variables or a dedicated secrets management system.  Change file permissions to 0600."
+  },
+  {
+    "title": "Missing error handling in `main`",
+    "description": "The `main` function lacks comprehensive error handling.  Errors during key loading or tweet posting could lead to unexpected program termination without informative error messages.",
+    "line": 50,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Wrap key loading and tweet posting in `if err != nil { ... }` blocks to handle potential errors gracefully."
+  },
+  {
+    "title": "Use of `os.Exit`",
+    "description": "The use of `os.Exit` in `loadKeys` is generally discouraged. It makes error handling less flexible and harder to manage.",
+    "line": 242,
+    "severity": "WARNING",
+    "type": "MAINTAINABILITY",
+    "fix": "Return an error from `loadKeys` and handle it in the `main` function. This allows for more controlled error handling and recovery."
+  },
+  {
+    "title": "Insufficient randomness in nonce generation",
+    "description": "The nonce generation uses `rand.Intn`, which might not be cryptographically secure enough for OAuth.  This could lead to signature collisions and security vulnerabilities.",
+    "line": 182,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Use `crypto.rand.Read` for generating cryptographically secure nonces."
+  }
+]
+INFO: 2025/09/14 18:56:02 [review_engine.go:116] Dependency analysis placeholder: not yet implemented.
+INFO: 2025/09/14 18:56:02 [webhook.go:134] Analysis complete. Found 0 issues (1 critical, 3 error, 3 warning)
+INFO: 2025/09/14 18:56:42 [main.go:73] Shutting down server...
+INFO: 2025/09/14 18:56:42 [main.go:73] Server stopped
+INFO: 2025/09/14 19:05:46 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 19:05:46 [asm_arm64.s:1223] Starting server on 0.0.0.0:8080
+INFO: 2025/09/14 19:05:47 [main.go:73] Shutting down server...
+INFO: 2025/09/14 19:05:47 [main.go:73] Server stopped
+INFO: 2025/09/14 19:05:59 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 19:05:59 [asm_arm64.s:1223] Starting server on 0.0.0.0:8080
+INFO: 2025/09/14 19:06:59 [webhook.go:116] Cloning repository: https://github.com/EuclidStellar/twt-cli
+INFO: 2025/09/14 19:07:07 [webhook.go:116] Checking out commit: HEAD
+INFO: 2025/09/14 19:07:07 [webhook.go:116] Base commit not provided, using HEAD~1 instead
+INFO: 2025/09/14 19:07:07 [webhook.go:116] Getting changed files between HEAD~1 and HEAD
+INFO: 2025/09/14 19:07:07 [webhook.go:116] Found 1 changed files
+INFO: 2025/09/14 19:07:07 [webhook.go:134] Starting code analysis for EuclidStellar/twt-cli
+INFO: 2025/09/14 19:07:07 [asm_arm64.s:1223] Running AI analysis
+INFO: 2025/09/14 19:07:07 [asm_arm64.s:1223] Analyzing 1 go files
+INFO: 2025/09/14 19:07:07 [review_engine.go:102] Running AI analysis on 1 files
+INFO: 2025/09/14 19:07:07 [review_engine.go:65] Analyzing 1 Go files
+INFO: 2025/09/14 19:07:07 [review_engine.go:65] Running tool: golangci-lint
+INFO: 2025/09/14 19:07:07 [review_engine.go:102] Analyzing twt.go with AI
+INFO: 2025/09/14 19:07:07 [golang.go:52] Running golangci-lint with args: [run -v twt.go]
+WARN: 2025/09/14 19:07:07 [golang.go:52] Error running command: exit status 1
+INFO: 2025/09/14 19:07:07 [golang.go:52] golangci-lint output: ../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-2032531710/twt.go:113:22: Error return value of `res.Body.Close` is not checked (errcheck)
+	defer res.Body.Close()
+	                    ^
+../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-2032531710/twt.go:182:28: Error return value is not checked (errcheck)
+	createDirectoryIfNotExists(dirname)
+	                          ^
+../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-2032531710/twt.go:11:2: SA1019: "io/ioutil" has been deprecated since Go 1.19: As of Go 1.16, the same functionality is now provided by package [io] or package [os], and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+3 issues:
+* errcheck: 2
+* staticcheck: 1
+
+level=info msg="golangci-lint has version 2.0.2 built with go1.24.1 from 2b224c2 on 2025-03-25T20:33:26Z"
+level=info msg="[config_reader] Config search paths: [./ /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-2032531710 /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn /var/folders/6m /var/folders /var / /Users/euclidstellar]"
+level=info msg="maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined"
+level=info msg="[goenv] Read go env for 9.9985ms: map[string]string{\"GOCACHE\":\"/Users/euclidstellar/Library/Caches/go-build\", \"GOROOT\":\"/opt/homebrew/Cellar/go/1.24.1/libexec\"}"
+level=info msg="[lintersdb] Active 5 linters: [errcheck govet ineffassign staticcheck unused]"
+level=info msg="[loader] Go packages loading at mode 8767 (compiled_files|exports_file|imports|name|types_sizes|deps|files) took 373.540416ms"
+level=info msg="[runner/filename_unadjuster] Pre-built 0 adjustments in 782.5µs"
+level=info msg="[linters_context/goanalysis] analyzers took 38.430275ms with top 10 stages: buildir: 10.580504ms, fact_deprecated: 2.010084ms, unused: 1.265417ms, S1038: 1.2165ms, QF1004: 1.131792ms, inspect: 1.113286ms, stdversion: 1.091ms, fact_purity: 881.663µs, ctrlflow: 841.21µs, printf: 836.336µs"
+level=info msg="[runner] Processors filtering stat (in/out): filename_unadjuster: 3/3, max_per_file_from_linter: 3/3, max_same_issues: 3/3, exclusion_rules: 3/3, nolint_filter: 3/3, invalid_issue: 3/3, path_relativity: 3/3, generated_file_filter: 3/3, diff: 3/3, uniq_by_line: 3/3, max_from_linter: 3/3, source_code: 3/3, path_shortener: 3/3, cgo: 3/3, exclusion_paths: 3/3, fixer: 3/3, severity-rules: 3/3, path_prettifier: 3/3, sort_results: 3/3, path_absoluter: 3/3"
+level=info msg="[runner] processing took 801.54µs with stages: nolint_filter: 542.166µs, cgo: 150.334µs, source_code: 47.167µs, generated_file_filter: 42.667µs, path_relativity: 5.792µs, sort_results: 3.501µs, uniq_by_line: 2µs, max_same_issues: 1.916µs, path_shortener: 1.208µs, max_from_linter: 1.125µs, invalid_issue: 625ns, path_prettifier: 624ns, filename_unadjuster: 417ns, path_absoluter: 416ns, fixer: 376ns, max_per_file_from_linter: 374ns, exclusion_paths: 333ns, exclusion_rules: 250ns, diff: 166ns, severity-rules: 83ns"
+level=info msg="[runner] linters took 146.27125ms with stages: goanalysis_metalinter: 145.3945ms"
+level=info msg="File cache stats: 1 entries of total size 5.3KiB"
+level=info msg="Memory: 7 samples, avg is 45.3MB, max is 67.3MB"
+level=info msg="Execution took 531.288708ms"
+INFO: 2025/09/14 19:07:07 [golang.go:52] Found issue: twt.go:113:22 - Error return value of `res.Body.Close` is not checked (errcheck)
+INFO: 2025/09/14 19:07:07 [golang.go:52] Found issue: twt.go:182:28 - Error return value is not checked (errcheck)
+INFO: 2025/09/14 19:07:07 [golang.go:52] Found issue: twt.go:11:2 - SA1019: "io/ioutil" has been deprecated since Go 1.19: As of Go 1.16, the same functionality is now provided by package [io] or package [os], and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+INFO: 2025/09/14 19:07:07 [golang.go:52] Found 3 issues from golangci-lint
+DEBUG: 2025/09/14 19:07:12 [ai_analyzer.go:49] Gemini raw response: [
+  {
+    "title": "Hardcoded keys file path",
+    "description": "The path to the keys file is hardcoded, making it difficult to change and potentially insecure if the file is committed to version control.",
+    "line": 28,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a configuration file to specify the keys file path."
+  },
+  {
+    "title": "Insecure storage of API keys",
+    "description": "API keys are stored in a plain text file with potentially insufficient permissions (0644). This is a major security vulnerability.",
+    "line": 226,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use a more secure method for storing API keys, such as environment variables or a dedicated secrets management system.  Change file permissions to 0600."
+  },
+  {
+    "title": "Missing error handling in `main`",
+    "description": "The `main` function lacks comprehensive error handling.  Errors during key loading or tweet posting could lead to unexpected program termination without informative messages.",
+    "line": 50,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Add error handling to gracefully handle potential errors during key loading and tweet posting."
+  },
+  {
+    "title": "Insufficient input validation",
+    "description": "The code does not validate user input, making it vulnerable to injection attacks. Maliciously crafted input could lead to unexpected behavior or security issues.",
+    "line": 100,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Validate user input to prevent injection attacks. Sanitize the tweet before sending it to the Twitter API."
+  },
+  {
+    "title": "Use of `os.Exit`",
+    "description": "The use of `os.Exit` in `loadKeys` is generally discouraged. It makes error handling less flexible and harder to debug.",
+    "line": 241,
+    "severity": "WARNING",
+    "type": "MAINTAINABILITY",
+    "fix": "Return an error from `loadKeys` and handle it in the `main` function. This allows for more controlled error handling and better program flow."
+  }
+]
+DEBUG: 2025/09/14 19:07:12 [ai_analyzer.go:49] Extracted JSON content: [
+  {
+    "title": "Hardcoded keys file path",
+    "description": "The path to the keys file is hardcoded, making it difficult to change and potentially insecure if the file is committed to version control.",
+    "line": 28,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a configuration file to specify the keys file path."
+  },
+  {
+    "title": "Insecure storage of API keys",
+    "description": "API keys are stored in a plain text file with potentially insufficient permissions (0644). This is a major security vulnerability.",
+    "line": 226,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use a more secure method for storing API keys, such as environment variables or a dedicated secrets management system.  Change file permissions to 0600."
+  },
+  {
+    "title": "Missing error handling in `main`",
+    "description": "The `main` function lacks comprehensive error handling.  Errors during key loading or tweet posting could lead to unexpected program termination without informative messages.",
+    "line": 50,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Add error handling to gracefully handle potential errors during key loading and tweet posting."
+  },
+  {
+    "title": "Insufficient input validation",
+    "description": "The code does not validate user input, making it vulnerable to injection attacks. Maliciously crafted input could lead to unexpected behavior or security issues.",
+    "line": 100,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Validate user input to prevent injection attacks. Sanitize the tweet before sending it to the Twitter API."
+  },
+  {
+    "title": "Use of `os.Exit`",
+    "description": "The use of `os.Exit` in `loadKeys` is generally discouraged. It makes error handling less flexible and harder to debug.",
+    "line": 241,
+    "severity": "WARNING",
+    "type": "MAINTAINABILITY",
+    "fix": "Return an error from `loadKeys` and handle it in the `main` function. This allows for more controlled error handling and better program flow."
+  }
+]
+INFO: 2025/09/14 19:07:12 [review_engine.go:119] Starting dependency analysis.
+INFO: 2025/09/14 19:07:12 [review_engine.go:119] Found go.mod, analyzing Go dependencies.
+INFO: 2025/09/14 19:07:12 [review_engine.go:119] Dependency analysis complete.
+INFO: 2025/09/14 19:07:12 [webhook.go:134] Analysis complete. Found 0 issues (1 critical, 4 error, 3 warning)
+INFO: 2025/09/14 19:08:05 [main.go:73] Shutting down server...
+INFO: 2025/09/14 19:08:05 [main.go:73] Server stopped
+INFO: 2025/09/14 19:08:52 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 19:08:52 [asm_arm64.s:1223] Starting server on 0.0.0.0:8080
+INFO: 2025/09/14 19:08:59 [webhook.go:116] Cloning repository: https://github.com/EuclidStellar/twt-cli
+INFO: 2025/09/14 19:09:10 [webhook.go:116] Checking out commit: HEAD
+INFO: 2025/09/14 19:09:10 [webhook.go:116] Base commit not provided, using HEAD~1 instead
+INFO: 2025/09/14 19:09:10 [webhook.go:116] Getting changed files between HEAD~1 and HEAD
+INFO: 2025/09/14 19:09:10 [webhook.go:116] Found 1 changed files
+INFO: 2025/09/14 19:09:10 [webhook.go:134] Starting code analysis for EuclidStellar/twt-cli
+INFO: 2025/09/14 19:09:10 [asm_arm64.s:1223] Running AI analysis
+INFO: 2025/09/14 19:09:10 [asm_arm64.s:1223] Analyzing 1 go files
+INFO: 2025/09/14 19:09:10 [review_engine.go:102] Running AI analysis on 1 files
+INFO: 2025/09/14 19:09:10 [review_engine.go:102] Analyzing twt.go with AI
+INFO: 2025/09/14 19:09:10 [review_engine.go:65] Analyzing 1 Go files
+INFO: 2025/09/14 19:09:10 [review_engine.go:65] Running tool: golangci-lint
+INFO: 2025/09/14 19:09:10 [golang.go:52] Running golangci-lint with args: [run -v twt.go]
+WARN: 2025/09/14 19:09:11 [golang.go:52] Error running command: exit status 1
+INFO: 2025/09/14 19:09:11 [golang.go:52] golangci-lint output: ../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3757780039/twt.go:113:22: Error return value of `res.Body.Close` is not checked (errcheck)
+	defer res.Body.Close()
+	                    ^
+../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3757780039/twt.go:182:28: Error return value is not checked (errcheck)
+	createDirectoryIfNotExists(dirname)
+	                          ^
+../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3757780039/twt.go:11:2: SA1019: "io/ioutil" has been deprecated since Go 1.19: As of Go 1.16, the same functionality is now provided by package [io] or package [os], and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+3 issues:
+* errcheck: 2
+* staticcheck: 1
+
+level=info msg="golangci-lint has version 2.0.2 built with go1.24.1 from 2b224c2 on 2025-03-25T20:33:26Z"
+level=info msg="[config_reader] Config search paths: [./ /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3757780039 /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn /var/folders/6m /var/folders /var / /Users/euclidstellar]"
+level=info msg="maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined"
+level=info msg="[goenv] Read go env for 10.644583ms: map[string]string{\"GOCACHE\":\"/Users/euclidstellar/Library/Caches/go-build\", \"GOROOT\":\"/opt/homebrew/Cellar/go/1.24.1/libexec\"}"
+level=info msg="[lintersdb] Active 5 linters: [errcheck govet ineffassign staticcheck unused]"
+level=info msg="[loader] Go packages loading at mode 8767 (compiled_files|imports|name|types_sizes|deps|exports_file|files) took 361.397417ms"
+level=info msg="[runner/filename_unadjuster] Pre-built 0 adjustments in 1.709042ms"
+level=info msg="[linters_context/goanalysis] analyzers took 50.96101ms with top 10 stages: buildir: 14.616543ms, fact_deprecated: 2.40913ms, unused: 2.3235ms, S1038: 1.885542ms, ineffassign: 1.786917ms, inspect: 1.647451ms, printf: 1.325507ms, ctrlflow: 1.264795ms, QF1004: 1.1525ms, copylocks: 1.031833ms"
+level=info msg="[runner] Processors filtering stat (in/out): max_from_linter: 3/3, source_code: 3/3, sort_results: 3/3, max_same_issues: 3/3, path_absoluter: 3/3, cgo: 3/3, generated_file_filter: 3/3, nolint_filter: 3/3, max_per_file_from_linter: 3/3, severity-rules: 3/3, path_prettifier: 3/3, exclusion_paths: 3/3, exclusion_rules: 3/3, diff: 3/3, fixer: 3/3, uniq_by_line: 3/3, filename_unadjuster: 3/3, invalid_issue: 3/3, path_relativity: 3/3, path_shortener: 3/3"
+level=info msg="[runner] processing took 609.457µs with stages: nolint_filter: 493.416µs, generated_file_filter: 41.834µs, source_code: 36.499µs, cgo: 17.459µs, path_relativity: 5.667µs, sort_results: 5.125µs, max_same_issues: 1.667µs, invalid_issue: 1.292µs, uniq_by_line: 1.291µs, max_from_linter: 1.207µs, path_shortener: 834ns, path_prettifier: 791ns, exclusion_rules: 458ns, filename_unadjuster: 375ns, max_per_file_from_linter: 334ns, fixer: 333ns, diff: 250ns, exclusion_paths: 249ns, path_absoluter: 209ns, severity-rules: 167ns"
+level=info msg="[runner] linters took 152.814541ms with stages: goanalysis_metalinter: 152.136375ms"
+level=info msg="File cache stats: 1 entries of total size 5.3KiB"
+level=info msg="Memory: 7 samples, avg is 46.4MB, max is 72.0MB"
+level=info msg="Execution took 527.398834ms"
+INFO: 2025/09/14 19:09:11 [golang.go:52] Found issue: twt.go:113:22 - Error return value of `res.Body.Close` is not checked (errcheck)
+INFO: 2025/09/14 19:09:11 [golang.go:52] Found issue: twt.go:182:28 - Error return value is not checked (errcheck)
+INFO: 2025/09/14 19:09:11 [golang.go:52] Found issue: twt.go:11:2 - SA1019: "io/ioutil" has been deprecated since Go 1.19: As of Go 1.16, the same functionality is now provided by package [io] or package [os], and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+INFO: 2025/09/14 19:09:11 [golang.go:52] Found 3 issues from golangci-lint
+DEBUG: 2025/09/14 19:09:15 [ai_analyzer.go:49] Gemini raw response: [
+  {
+    "title": "Hardcoded keys file path",
+    "description": "The path to the keys file is hardcoded, making it difficult to change and potentially insecure if the file is committed to version control.",
+    "line": 28,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a configuration file to specify the keys file path."
+  },
+  {
+    "title": "Insecure storage of API keys",
+    "description": "API keys are stored in a plain text file with potentially insecure permissions (0644).  This is a major security vulnerability.",
+    "line": 226,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use a more secure method for storing API keys, such as environment variables or a dedicated secrets management system.  Restrict file permissions to only the owner."
+  },
+  {
+    "title": "Missing error handling in `main`",
+    "description": "The `main` function lacks comprehensive error handling.  Errors during key loading or tweet posting could lead to unexpected program termination without informative messages.",
+    "line": 50,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Add error handling to gracefully handle potential errors during key loading and tweet posting."
+  },
+  {
+    "title": "Insufficient input validation",
+    "description": "The code does not validate user input, making it vulnerable to injection attacks.  Maliciously crafted input could lead to unexpected behavior or security issues.",
+    "line": 100,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Validate user input to prevent injection attacks.  Sanitize the tweet before sending it to the Twitter API."
+  },
+  {
+    "title": "Use of `os.Exit`",
+    "description": "The use of `os.Exit` in `loadKeys` is generally discouraged. It makes error handling less flexible and harder to debug.",
+    "line": 241,
+    "severity": "WARNING",
+    "type": "MAINTAINABILITY",
+    "fix": "Return an error from `loadKeys` and handle it in the `main` function.  Avoid using `os.Exit`."
+  }
+]
+DEBUG: 2025/09/14 19:09:15 [ai_analyzer.go:49] Extracted JSON content: [
+  {
+    "title": "Hardcoded keys file path",
+    "description": "The path to the keys file is hardcoded, making it difficult to change and potentially insecure if the file is committed to version control.",
+    "line": 28,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a configuration file to specify the keys file path."
+  },
+  {
+    "title": "Insecure storage of API keys",
+    "description": "API keys are stored in a plain text file with potentially insecure permissions (0644).  This is a major security vulnerability.",
+    "line": 226,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use a more secure method for storing API keys, such as environment variables or a dedicated secrets management system.  Restrict file permissions to only the owner."
+  },
+  {
+    "title": "Missing error handling in `main`",
+    "description": "The `main` function lacks comprehensive error handling.  Errors during key loading or tweet posting could lead to unexpected program termination without informative messages.",
+    "line": 50,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Add error handling to gracefully handle potential errors during key loading and tweet posting."
+  },
+  {
+    "title": "Insufficient input validation",
+    "description": "The code does not validate user input, making it vulnerable to injection attacks.  Maliciously crafted input could lead to unexpected behavior or security issues.",
+    "line": 100,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Validate user input to prevent injection attacks.  Sanitize the tweet before sending it to the Twitter API."
+  },
+  {
+    "title": "Use of `os.Exit`",
+    "description": "The use of `os.Exit` in `loadKeys` is generally discouraged. It makes error handling less flexible and harder to debug.",
+    "line": 241,
+    "severity": "WARNING",
+    "type": "MAINTAINABILITY",
+    "fix": "Return an error from `loadKeys` and handle it in the `main` function.  Avoid using `os.Exit`."
+  }
+]
+INFO: 2025/09/14 19:09:15 [review_engine.go:119] Starting dependency analysis.
+INFO: 2025/09/14 19:09:15 [review_engine.go:119] Found go.mod, analyzing Go dependencies.
+INFO: 2025/09/14 19:09:15 [review_engine.go:119] Dependency analysis complete.
+INFO: 2025/09/14 19:09:15 [webhook.go:134] Analysis complete. Found 0 issues (1 critical, 4 error, 3 warning)
+INFO: 2025/09/14 19:10:32 [main.go:73] Shutting down server...
+INFO: 2025/09/14 19:10:32 [main.go:73] Server stopped
+INFO: 2025/09/14 19:10:35 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 19:10:35 [asm_arm64.s:1223] Starting server on 0.0.0.0:8080
+INFO: 2025/09/14 19:10:45 [webhook.go:116] Cloning repository: https://github.com/EuclidStellar/twt-cli
+INFO: 2025/09/14 19:11:01 [webhook.go:116] Checking out commit: HEAD
+INFO: 2025/09/14 19:11:01 [webhook.go:116] Base commit not provided, using HEAD~1 instead
+INFO: 2025/09/14 19:11:01 [webhook.go:116] Getting changed files between HEAD~1 and HEAD
+INFO: 2025/09/14 19:11:01 [webhook.go:116] Found 1 changed files
+INFO: 2025/09/14 19:11:01 [webhook.go:134] Starting code analysis for EuclidStellar/twt-cli
+INFO: 2025/09/14 19:11:01 [asm_arm64.s:1223] Running AI analysis
+INFO: 2025/09/14 19:11:01 [review_engine.go:102] Running AI analysis on 1 files
+INFO: 2025/09/14 19:11:01 [review_engine.go:102] Analyzing twt.go with AI
+INFO: 2025/09/14 19:11:01 [asm_arm64.s:1223] Analyzing 1 go files
+INFO: 2025/09/14 19:11:01 [review_engine.go:65] Analyzing 1 Go files
+INFO: 2025/09/14 19:11:01 [review_engine.go:65] Running tool: golangci-lint
+INFO: 2025/09/14 19:11:01 [golang.go:52] Running golangci-lint with args: [run -v twt.go]
+WARN: 2025/09/14 19:11:01 [golang.go:52] Error running command: exit status 1
+INFO: 2025/09/14 19:11:01 [golang.go:52] golangci-lint output: ../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-1344057793/twt.go:113:22: Error return value of `res.Body.Close` is not checked (errcheck)
+	defer res.Body.Close()
+	                    ^
+../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-1344057793/twt.go:182:28: Error return value is not checked (errcheck)
+	createDirectoryIfNotExists(dirname)
+	                          ^
+../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-1344057793/twt.go:11:2: SA1019: "io/ioutil" has been deprecated since Go 1.19: As of Go 1.16, the same functionality is now provided by package [io] or package [os], and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+3 issues:
+* errcheck: 2
+* staticcheck: 1
+
+level=info msg="golangci-lint has version 2.0.2 built with go1.24.1 from 2b224c2 on 2025-03-25T20:33:26Z"
+level=info msg="[config_reader] Config search paths: [./ /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-1344057793 /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn /var/folders/6m /var/folders /var / /Users/euclidstellar]"
+level=info msg="maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined"
+level=info msg="[goenv] Read go env for 9.698375ms: map[string]string{\"GOCACHE\":\"/Users/euclidstellar/Library/Caches/go-build\", \"GOROOT\":\"/opt/homebrew/Cellar/go/1.24.1/libexec\"}"
+level=info msg="[lintersdb] Active 5 linters: [errcheck govet ineffassign staticcheck unused]"
+level=info msg="[loader] Go packages loading at mode 8767 (exports_file|imports|types_sizes|compiled_files|deps|files|name) took 350.306541ms"
+level=info msg="[runner/filename_unadjuster] Pre-built 0 adjustments in 1.259917ms"
+level=info msg="[linters_context/goanalysis] analyzers took 48.893048ms with top 10 stages: buildir: 11.556798ms, fact_deprecated: 3.16771ms, unused: 2.331167ms, ctrlflow: 1.974247ms, QF1004: 1.653792ms, inspect: 1.559876ms, fact_purity: 1.289669ms, printf: 1.113163ms, SA5012: 1.099505ms, errcheck: 1.091667ms"
+level=info msg="[runner] Processors filtering stat (in/out): exclusion_rules: 3/3, diff: 3/3, fixer: 3/3, uniq_by_line: 3/3, max_per_file_from_linter: 3/3, cgo: 3/3, filename_unadjuster: 3/3, generated_file_filter: 3/3, nolint_filter: 3/3, max_same_issues: 3/3, max_from_linter: 3/3, path_shortener: 3/3, path_absoluter: 3/3, invalid_issue: 3/3, path_relativity: 3/3, exclusion_paths: 3/3, source_code: 3/3, severity-rules: 3/3, path_prettifier: 3/3, sort_results: 3/3"
+level=info msg="[runner] processing took 496.753µs with stages: nolint_filter: 365.542µs, generated_file_filter: 46.126µs, source_code: 45.875µs, cgo: 19.584µs, path_relativity: 5.916µs, sort_results: 3.625µs, max_same_issues: 2µs, uniq_by_line: 1.417µs, max_from_linter: 1.125µs, path_shortener: 1µs, invalid_issue: 958ns, path_absoluter: 708ns, filename_unadjuster: 667ns, exclusion_paths: 582ns, max_per_file_from_linter: 417ns, fixer: 334ns, exclusion_rules: 293ns, diff: 250ns, path_prettifier: 209ns, severity-rules: 125ns"
+level=info msg="[runner] linters took 158.134917ms with stages: goanalysis_metalinter: 157.563917ms"
+level=info msg="File cache stats: 1 entries of total size 5.3KiB"
+level=info msg="Memory: 7 samples, avg is 46.3MB, max is 67.6MB"
+level=info msg="Execution took 520.277458ms"
+INFO: 2025/09/14 19:11:01 [golang.go:52] Found issue: twt.go:113:22 - Error return value of `res.Body.Close` is not checked (errcheck)
+INFO: 2025/09/14 19:11:01 [golang.go:52] Found issue: twt.go:182:28 - Error return value is not checked (errcheck)
+INFO: 2025/09/14 19:11:01 [golang.go:52] Found issue: twt.go:11:2 - SA1019: "io/ioutil" has been deprecated since Go 1.19: As of Go 1.16, the same functionality is now provided by package [io] or package [os], and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+INFO: 2025/09/14 19:11:01 [golang.go:52] Found 3 issues from golangci-lint
+DEBUG: 2025/09/14 19:11:05 [ai_analyzer.go:49] Gemini raw response: [
+  {
+    "title": "Hardcoded File Path",
+    "description": "The path to the Twitter keys file is hardcoded, making it difficult to change and potentially insecure if the file is not properly protected.",
+    "line": 28,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a configuration file to specify the keys file path."
+  },
+  {
+    "title": "Insecure API Key Storage",
+    "description": "API keys are stored in a plain text file with potentially weak permissions (0644). This is a major security vulnerability.",
+    "line": 226,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use a more secure method for storing API keys, such as environment variables or a dedicated secrets management system.  Change file permissions to 0600."
+  },
+  {
+    "title": "Error Handling",
+    "description": "The program uses `os.Exit(1)` in `loadKeys`, which is generally discouraged.  Better to return an error and handle it in `main`.",
+    "line": 240,
+    "severity": "ERROR",
+    "type": "MAINTAINABILITY",
+    "fix": "Change `os.Exit(1)` to return an error and handle it gracefully in the `main` function."
+  },
+  {
+    "title": "Missing Input Validation",
+    "description": "The program does not validate user input, making it vulnerable to various attacks (e.g., injection).",
+    "line": 100,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Validate all user inputs before using them in API requests.  Sanitize inputs to prevent injection attacks."
+  },
+  {
+    "title": "Random Number Generator Seeding",
+    "description": "The random number generator is not seeded, leading to the same nonce being generated each time the program runs.",
+    "line": 182,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Seed the random number generator using `rand.Seed(time.Now().UnixNano())` before generating the nonce."
+  }
+]
+DEBUG: 2025/09/14 19:11:05 [ai_analyzer.go:49] Extracted JSON content: [
+  {
+    "title": "Hardcoded File Path",
+    "description": "The path to the Twitter keys file is hardcoded, making it difficult to change and potentially insecure if the file is not properly protected.",
+    "line": 28,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a configuration file to specify the keys file path."
+  },
+  {
+    "title": "Insecure API Key Storage",
+    "description": "API keys are stored in a plain text file with potentially weak permissions (0644). This is a major security vulnerability.",
+    "line": 226,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use a more secure method for storing API keys, such as environment variables or a dedicated secrets management system.  Change file permissions to 0600."
+  },
+  {
+    "title": "Error Handling",
+    "description": "The program uses `os.Exit(1)` in `loadKeys`, which is generally discouraged.  Better to return an error and handle it in `main`.",
+    "line": 240,
+    "severity": "ERROR",
+    "type": "MAINTAINABILITY",
+    "fix": "Change `os.Exit(1)` to return an error and handle it gracefully in the `main` function."
+  },
+  {
+    "title": "Missing Input Validation",
+    "description": "The program does not validate user input, making it vulnerable to various attacks (e.g., injection).",
+    "line": 100,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Validate all user inputs before using them in API requests.  Sanitize inputs to prevent injection attacks."
+  },
+  {
+    "title": "Random Number Generator Seeding",
+    "description": "The random number generator is not seeded, leading to the same nonce being generated each time the program runs.",
+    "line": 182,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Seed the random number generator using `rand.Seed(time.Now().UnixNano())` before generating the nonce."
+  }
+]
+INFO: 2025/09/14 19:11:05 [review_engine.go:119] Starting dependency analysis.
+INFO: 2025/09/14 19:11:05 [review_engine.go:119] Found go.mod, analyzing Go dependencies.
+INFO: 2025/09/14 19:11:05 [review_engine.go:119] Dependency analysis complete.
+INFO: 2025/09/14 19:11:05 [webhook.go:134] Analysis complete. Found 0 issues (1 critical, 4 error, 3 warning)
+INFO: 2025/09/14 19:11:30 [main.go:73] Shutting down server...
+INFO: 2025/09/14 19:11:30 [main.go:73] Server stopped
+INFO: 2025/09/14 19:31:38 [proc.go:283] Starting Gollora
+INFO: 2025/09/14 19:31:38 [asm_arm64.s:1223] Starting server on 0.0.0.0:8080
+INFO: 2025/09/14 19:31:59 [webhook.go:116] Cloning repository: https://github.com/EuclidStellar/twt-cli
+INFO: 2025/09/14 19:32:10 [webhook.go:116] Checking out commit: HEAD
+INFO: 2025/09/14 19:32:10 [webhook.go:116] Base commit not provided, using HEAD~1 instead
+INFO: 2025/09/14 19:32:10 [webhook.go:116] Getting changed files between HEAD~1 and HEAD
+INFO: 2025/09/14 19:32:10 [webhook.go:116] Found 1 changed files
+INFO: 2025/09/14 19:32:10 [webhook.go:134] Starting code analysis for EuclidStellar/twt-cli
+INFO: 2025/09/14 19:32:10 [asm_arm64.s:1223] Running AI analysis
+INFO: 2025/09/14 19:32:10 [asm_arm64.s:1223] Analyzing 1 go files
+INFO: 2025/09/14 19:32:10 [review_engine.go:65] Analyzing 1 Go files
+INFO: 2025/09/14 19:32:10 [review_engine.go:65] Running tool: golangci-lint
+INFO: 2025/09/14 19:32:10 [review_engine.go:102] Running AI analysis on 1 files
+INFO: 2025/09/14 19:32:10 [review_engine.go:102] Analyzing twt.go with AI
+INFO: 2025/09/14 19:32:10 [golang.go:52] Running golangci-lint with args: [run -v twt.go]
+WARN: 2025/09/14 19:32:11 [golang.go:52] Error running command: exit status 1
+INFO: 2025/09/14 19:32:11 [golang.go:52] golangci-lint output: ../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-4080100111/twt.go:113:22: Error return value of `res.Body.Close` is not checked (errcheck)
+	defer res.Body.Close()
+	                    ^
+../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-4080100111/twt.go:182:28: Error return value is not checked (errcheck)
+	createDirectoryIfNotExists(dirname)
+	                          ^
+../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-4080100111/twt.go:11:2: SA1019: "io/ioutil" has been deprecated since Go 1.19: As of Go 1.16, the same functionality is now provided by package [io] or package [os], and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+3 issues:
+* errcheck: 2
+* staticcheck: 1
+
+level=info msg="golangci-lint has version 2.0.2 built with go1.24.1 from 2b224c2 on 2025-03-25T20:33:26Z"
+level=info msg="[config_reader] Config search paths: [./ /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-4080100111 /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn /var/folders/6m /var/folders /var / /Users/euclidstellar]"
+level=info msg="maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined"
+level=info msg="[goenv] Read go env for 9.925875ms: map[string]string{\"GOCACHE\":\"/Users/euclidstellar/Library/Caches/go-build\", \"GOROOT\":\"/opt/homebrew/Cellar/go/1.24.1/libexec\"}"
+level=info msg="[lintersdb] Active 5 linters: [errcheck govet ineffassign staticcheck unused]"
+level=info msg="[loader] Go packages loading at mode 8767 (deps|name|types_sizes|exports_file|files|imports|compiled_files) took 373.849333ms"
+level=info msg="[runner/filename_unadjuster] Pre-built 0 adjustments in 1.823666ms"
+level=info msg="[linters_context/goanalysis] analyzers took 37.976703ms with top 10 stages: buildir: 10.811294ms, fact_deprecated: 1.953618ms, unused: 1.892834ms, printf: 1.598874ms, ineffassign: 1.262583ms, inspect: 1.129913ms, SA1012: 867.125µs, S1038: 856.709µs, ctrlflow: 841.749µs, fact_purity: 832.285µs"
+level=info msg="[runner] Processors filtering stat (in/out): cgo: 3/3, filename_unadjuster: 3/3, path_relativity: 3/3, exclusion_paths: 3/3, exclusion_rules: 3/3, nolint_filter: 3/3, diff: 3/3, uniq_by_line: 3/3, max_per_file_from_linter: 3/3, path_shortener: 3/3, severity-rules: 3/3, sort_results: 3/3, path_absoluter: 3/3, invalid_issue: 3/3, generated_file_filter: 3/3, max_same_issues: 3/3, max_from_linter: 3/3, source_code: 3/3, fixer: 3/3, path_prettifier: 3/3"
+level=info msg="[runner] processing took 594.789µs with stages: nolint_filter: 478.376µs, generated_file_filter: 40.5µs, source_code: 40.083µs, cgo: 17.207µs, path_relativity: 5.209µs, sort_results: 4.291µs, max_same_issues: 2.251µs, uniq_by_line: 1.541µs, max_from_linter: 958ns, path_shortener: 917ns, invalid_issue: 708ns, path_prettifier: 707ns, max_per_file_from_linter: 376ns, path_absoluter: 334ns, fixer: 334ns, exclusion_paths: 291ns, exclusion_rules: 291ns, filename_unadjuster: 208ns, diff: 125ns, severity-rules: 82ns"
+level=info msg="[runner] linters took 150.6045ms with stages: goanalysis_metalinter: 149.940625ms"
+level=info msg="File cache stats: 1 entries of total size 5.3KiB"
+level=info msg="Memory: 7 samples, avg is 45.3MB, max is 67.8MB"
+level=info msg="Execution took 535.511666ms"
+INFO: 2025/09/14 19:32:11 [golang.go:52] Found issue: twt.go:113:22 - Error return value of `res.Body.Close` is not checked (errcheck)
+INFO: 2025/09/14 19:32:11 [golang.go:52] Found issue: twt.go:182:28 - Error return value is not checked (errcheck)
+INFO: 2025/09/14 19:32:11 [golang.go:52] Found issue: twt.go:11:2 - SA1019: "io/ioutil" has been deprecated since Go 1.19: As of Go 1.16, the same functionality is now provided by package [io] or package [os], and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+INFO: 2025/09/14 19:32:11 [golang.go:52] Found 3 issues from golangci-lint
+DEBUG: 2025/09/14 19:32:16 [ai_analyzer.go:49] Gemini raw response: [
+  {
+    "title": "Hardcoded keys file path",
+    "description": "The path to the keys file is hardcoded, making it difficult to change and potentially insecure if the file is committed to version control.",
+    "line": 28,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a configuration file to specify the keys file path."
+  },
+  {
+    "title": "Insecure storage of API keys",
+    "description": "API keys are stored in a plain text file with only basic permissions (0644). This is a significant security risk.",
+    "line": 226,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use a more secure method for storing API keys, such as environment variables or a dedicated secrets management system."
+  },
+  {
+    "title": "Missing error handling in `main`",
+    "description": "The `main` function lacks comprehensive error handling.  Errors during key loading or tweet posting could lead to unexpected program termination without informative messages.",
+    "line": 50,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Wrap key loading and tweet posting in `if err != nil` blocks and handle errors appropriately, providing informative error messages to the user."
+  },
+  {
+    "title": "Insufficient randomness in nonce generation",
+    "description": "The nonce generation uses `math/rand`, which is not cryptographically secure.  This could weaken the OAuth signature.",
+    "line": 181,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Use `crypto/rand` for generating cryptographically secure nonces."
+  },
+  {
+    "title": "Lack of input validation",
+    "description": "The code does not validate user input, making it vulnerable to injection attacks.  Maliciously crafted input could lead to unexpected behavior or security vulnerabilities.",
+    "line": 198,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Validate user input before using it in API requests.  Sanitize input to prevent injection attacks."
+  }
+]
+DEBUG: 2025/09/14 19:32:16 [ai_analyzer.go:49] Extracted JSON content: [
+  {
+    "title": "Hardcoded keys file path",
+    "description": "The path to the keys file is hardcoded, making it difficult to change and potentially insecure if the file is committed to version control.",
+    "line": 28,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a configuration file to specify the keys file path."
+  },
+  {
+    "title": "Insecure storage of API keys",
+    "description": "API keys are stored in a plain text file with only basic permissions (0644). This is a significant security risk.",
+    "line": 226,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use a more secure method for storing API keys, such as environment variables or a dedicated secrets management system."
+  },
+  {
+    "title": "Missing error handling in `main`",
+    "description": "The `main` function lacks comprehensive error handling.  Errors during key loading or tweet posting could lead to unexpected program termination without informative messages.",
+    "line": 50,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Wrap key loading and tweet posting in `if err != nil` blocks and handle errors appropriately, providing informative error messages to the user."
+  },
+  {
+    "title": "Insufficient randomness in nonce generation",
+    "description": "The nonce generation uses `math/rand`, which is not cryptographically secure.  This could weaken the OAuth signature.",
+    "line": 181,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Use `crypto/rand` for generating cryptographically secure nonces."
+  },
+  {
+    "title": "Lack of input validation",
+    "description": "The code does not validate user input, making it vulnerable to injection attacks.  Maliciously crafted input could lead to unexpected behavior or security vulnerabilities.",
+    "line": 198,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Validate user input before using it in API requests.  Sanitize input to prevent injection attacks."
+  }
+]
+INFO: 2025/09/14 19:32:16 [review_engine.go:119] Starting dependency analysis.
+INFO: 2025/09/14 19:32:16 [review_engine.go:119] Found go.mod, analyzing Go dependencies.
+INFO: 2025/09/14 19:32:16 [review_engine.go:119] Dependency analysis complete.
+INFO: 2025/09/14 19:32:16 [webhook.go:134] Analysis complete. Found 0 issues (1 critical, 4 error, 3 warning)
+INFO: 2025/09/14 19:36:43 [main.go:73] Shutting down server...
+INFO: 2025/09/14 19:36:43 [main.go:73] Server stopped

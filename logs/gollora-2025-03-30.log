@@ -1,0 +1,812 @@
+INFO: 2025/03/30 01:27:15 [proc.go:283] Starting Gollora
+INFO: 2025/03/30 01:27:15 [asm_arm64.s:1223] Starting server on 0.0.0.0:8080
+INFO: 2025/03/30 01:35:40 [webhook.go:123] Starting analysis process for event: push
+INFO: 2025/03/30 01:35:40 [main.go:298] Cloning repository: https://github.com/EuclidStellar/gollora-test.git
+INFO: 2025/03/30 01:35:41 [main.go:298] Checking out commit: f8e7791b04980a315da3c781cc19bfe30e518dbc
+INFO: 2025/03/30 01:35:41 [main.go:298] Getting changed files between 0000000000000000000000000000000000000000 and f8e7791b04980a315da3c781cc19bfe30e518dbc
+INFO: 2025/03/30 01:35:43 [main.go:298] Found 2 changed files
+INFO: 2025/03/30 01:35:43 [main.go:321] Starting code analysis for EuclidStellar/gollora-test
+INFO: 2025/03/30 01:35:43 [asm_arm64.s:1223] Running AI analysis
+INFO: 2025/03/30 01:35:43 [asm_arm64.s:1223] Analyzing 1 go files
+INFO: 2025/03/30 01:35:43 [review_engine.go:96] Running AI analysis on 2 files
+INFO: 2025/03/30 01:35:43 [review_engine.go:96] Analyzing README.md with AI
+INFO: 2025/03/30 01:35:43 [review_engine.go:62] Analyzing 1 Go files
+INFO: 2025/03/30 01:35:43 [review_engine.go:62] Running tool: golangci-lint
+INFO: 2025/03/30 01:35:43 [golang.go:52] No go.mod file found, initializing temporary Go module
+INFO: 2025/03/30 01:35:43 [golang.go:52] Running golangci-lint with args: [run -v main.go]
+WARN: 2025/03/30 01:35:44 [golang.go:52] Error running command: exit status 1
+INFO: 2025/03/30 01:35:44 [golang.go:52] golangci-lint output: ../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3676049035/main.go:12:12: expected ')', found '{' (typecheck)
+func main( {
+           ^
+../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3676049035/main.go:13:14: missing ',' before newline in parameter list (typecheck)
+	port := 8080
+	            ^
+../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3676049035/main.go:14:7: missing ',' in parameter list (typecheck)
+	port := "localhost" 
+	     ^
+../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3676049035/main.go:16:17: missing ',' in parameter list (typecheck)
+	http.HandleFunc("/auth", authenticate)
+	               ^
+../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3676049035/main.go:17:2: expected declaration, found http (typecheck)
+	http.ListenAndServe(":8080", nil)
+	^
+5 issues:
+* typecheck: 5
+
+level=info msg="golangci-lint has version 2.0.2 built with go1.24.1 from 2b224c2 on 2025-03-25T20:33:26Z"
+level=info msg="[config_reader] Config search paths: [./ /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3676049035 /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn /var/folders/6m /var/folders /var / /Users/euclidstellar]"
+level=info msg="maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined"
+level=info msg="[goenv] Read go env for 10.190541ms: map[string]string{\"GOCACHE\":\"/Users/euclidstellar/Library/Caches/go-build\", \"GOROOT\":\"/opt/homebrew/Cellar/go/1.24.1/libexec\"}"
+level=info msg="[lintersdb] Active 5 linters: [errcheck govet ineffassign staticcheck unused]"
+level=info msg="[loader] Go packages loading at mode 8767 (imports|exports_file|name|types_sizes|compiled_files|deps|files) took 336.060542ms"
+level=info msg="[runner/filename_unadjuster] Pre-built 0 adjustments in 1.894833ms"
+level=info msg="[linters_context/goanalysis] analyzers took 95.015714ms with top 10 stages: buildir: 3.397375ms, printf: 2.901837ms, unsafeptr: 2.413ms, defers: 2.391583ms, nilfunc: 2.305ms, fact_deprecated: 1.619113ms, QF1003: 1.515042ms, S1037: 1.464958ms, S1017: 1.333083ms, ST1013: 1.325541ms"
+level=info msg="[runner] Issues before processing: 1005, after processing: 5"
+level=info msg="[runner] Processors filtering stat (in/out): exclusion_paths: 1005/1005, exclusion_rules: 1005/1005, uniq_by_line: 1005/5, max_per_file_from_linter: 5/5, max_same_issues: 5/5, max_from_linter: 5/5, invalid_issue: 1005/1005, generated_file_filter: 1005/1005, nolint_filter: 1005/1005, source_code: 5/5, path_shortener: 5/5, severity-rules: 5/5, sort_results: 5/5, path_absoluter: 1005/1005, fixer: 1005/1005, path_prettifier: 5/5, cgo: 1005/1005, filename_unadjuster: 1005/1005, path_relativity: 1005/1005, diff: 1005/1005"
+level=info msg="[runner] processing took 1.842709ms with stages: path_relativity: 1.456208ms, source_code: 62.25µs, uniq_by_line: 53.959µs, nolint_filter: 52.167µs, cgo: 45.709µs, generated_file_filter: 44.958µs, filename_unadjuster: 41.833µs, invalid_issue: 38.417µs, path_absoluter: 37.917µs, max_same_issues: 2.417µs, sort_results: 2.375µs, max_from_linter: 1µs, path_shortener: 916ns, exclusion_paths: 584ns, max_per_file_from_linter: 500ns, exclusion_rules: 499ns, path_prettifier: 375ns, fixer: 374ns, diff: 126ns, severity-rules: 125ns"
+level=info msg="[runner] linters took 181.111625ms with stages: goanalysis_metalinter: 179.161ms"
+level=info msg="File cache stats: 1 entries of total size 703B"
+level=info msg="Memory: 7 samples, avg is 46.9MB, max is 71.6MB"
+level=info msg="Execution took 530.197458ms"
+INFO: 2025/03/30 01:35:44 [golang.go:52] Found issue: main.go:12:12 - expected ')', found '{' (typecheck)
+INFO: 2025/03/30 01:35:44 [golang.go:52] Found issue: main.go:13:14 - missing ',' before newline in parameter list (typecheck)
+INFO: 2025/03/30 01:35:44 [golang.go:52] Found issue: main.go:14:7 - missing ',' in parameter list (typecheck)
+INFO: 2025/03/30 01:35:44 [golang.go:52] Found issue: main.go:16:17 - missing ',' in parameter list (typecheck)
+INFO: 2025/03/30 01:35:44 [golang.go:52] Found issue: main.go:17:2 - expected declaration, found http (typecheck)
+INFO: 2025/03/30 01:35:44 [golang.go:52] Found 5 issues from golangci-lint
+DEBUG: 2025/03/30 01:35:45 [ai_analyzer.go:49] Gemini raw response: ```json
+[]
+```
+DEBUG: 2025/03/30 01:35:45 [ai_analyzer.go:49] Extracted JSON content: []
+WARN: 2025/03/30 01:35:45 [ai_analyzer.go:49] Gemini returned empty or too short JSON response
+INFO: 2025/03/30 01:35:45 [review_engine.go:96] Analyzing main.go with AI
+DEBUG: 2025/03/30 01:35:49 [ai_analyzer.go:49] Gemini raw response: [
+  {
+    "title": "Hardcoded Secret Key",
+    "description": "The secret key is hardcoded directly in the source code, making it vulnerable to exposure.",
+    "line": 7,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a more secure key management system to store the secret key."
+  },
+  {
+    "title": "Insecure Authentication",
+    "description": "The authentication mechanism is vulnerable because passwords are sent in plain text via the URL and compared directly to the hardcoded secret key without any salting or hashing.",
+    "line": 22,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use HTTPS, a robust authentication mechanism (e.g., OAuth 2.0, JWT), and proper password hashing with salting."
+  },
+  {
+    "title": "Unhandled Errors",
+    "description": "The `ioutil.ReadFile` function can return an error, but it's ignored. This can lead to unexpected behavior or crashes.",
+    "line": 30,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Check for errors returned by `ioutil.ReadFile` and handle them appropriately (e.g., log the error, return a 500 error)."
+  },
+  {
+    "title": "Password Hashing After Comparison",
+    "description": "The password is hashed using SHA1 *after* it's compared to the secret key. This is inefficient and doesn't enhance security.",
+    "line": 35,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Hash the password before comparison.  The SHA1 hash should be stored securely and compared against the stored hash."
+  },
+  {
+    "title": "Duplicate Port Declaration",
+    "description": "The port variable is declared twice in main function with different types.",
+    "line": 16,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Remove the duplicate declaration.  Use only one declaration with the correct type (int)."
+  }
+]
+DEBUG: 2025/03/30 01:35:49 [ai_analyzer.go:49] Extracted JSON content: [
+  {
+    "title": "Hardcoded Secret Key",
+    "description": "The secret key is hardcoded directly in the source code, making it vulnerable to exposure.",
+    "line": 7,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a more secure key management system to store the secret key."
+  },
+  {
+    "title": "Insecure Authentication",
+    "description": "The authentication mechanism is vulnerable because passwords are sent in plain text via the URL and compared directly to the hardcoded secret key without any salting or hashing.",
+    "line": 22,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use HTTPS, a robust authentication mechanism (e.g., OAuth 2.0, JWT), and proper password hashing with salting."
+  },
+  {
+    "title": "Unhandled Errors",
+    "description": "The `ioutil.ReadFile` function can return an error, but it's ignored. This can lead to unexpected behavior or crashes.",
+    "line": 30,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Check for errors returned by `ioutil.ReadFile` and handle them appropriately (e.g., log the error, return a 500 error)."
+  },
+  {
+    "title": "Password Hashing After Comparison",
+    "description": "The password is hashed using SHA1 *after* it's compared to the secret key. This is inefficient and doesn't enhance security.",
+    "line": 35,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Hash the password before comparison.  The SHA1 hash should be stored securely and compared against the stored hash."
+  },
+  {
+    "title": "Duplicate Port Declaration",
+    "description": "The port variable is declared twice in main function with different types.",
+    "line": 16,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Remove the duplicate declaration.  Use only one declaration with the correct type (int)."
+  }
+]
+INFO: 2025/03/30 01:36:01 [main.go:321] Analysis complete. Found 0 issues (2 critical, 7 error, 1 warning)
+INFO: 2025/03/30 01:36:01 [webhook.go:123] Analysis process completed successfully
+INFO: 2025/03/30 01:36:05 [webhook.go:123] Starting analysis process for event: pull_request
+INFO: 2025/03/30 01:36:05 [main.go:298] Cloning repository: https://github.com/EuclidStellar/gollora-test.git
+INFO: 2025/03/30 01:36:06 [main.go:298] Checking out commit: f8e7791b04980a315da3c781cc19bfe30e518dbc
+INFO: 2025/03/30 01:36:06 [main.go:298] Getting changed files between 80343620db082f8263b7e72f0293d87db1c2af62 and f8e7791b04980a315da3c781cc19bfe30e518dbc
+INFO: 2025/03/30 01:36:08 [main.go:298] Found 1 changed files
+INFO: 2025/03/30 01:36:08 [main.go:321] Starting code analysis for EuclidStellar/gollora-test
+INFO: 2025/03/30 01:36:08 [asm_arm64.s:1223] Running AI analysis
+INFO: 2025/03/30 01:36:08 [asm_arm64.s:1223] Analyzing 1 go files
+INFO: 2025/03/30 01:36:08 [review_engine.go:62] Analyzing 1 Go files
+INFO: 2025/03/30 01:36:08 [review_engine.go:62] Running tool: golangci-lint
+INFO: 2025/03/30 01:36:08 [review_engine.go:96] Running AI analysis on 1 files
+INFO: 2025/03/30 01:36:08 [review_engine.go:96] Analyzing main.go with AI
+INFO: 2025/03/30 01:36:08 [golang.go:52] No go.mod file found, initializing temporary Go module
+INFO: 2025/03/30 01:36:08 [golang.go:52] Running golangci-lint with args: [run -v main.go]
+WARN: 2025/03/30 01:36:09 [golang.go:52] Error running command: exit status 1
+INFO: 2025/03/30 01:36:09 [golang.go:52] golangci-lint output: ../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-338338104/main.go:12:12: expected ')', found '{' (typecheck)
+func main( {
+           ^
+../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-338338104/main.go:13:14: missing ',' before newline in parameter list (typecheck)
+	port := 8080
+	            ^
+../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-338338104/main.go:14:7: missing ',' in parameter list (typecheck)
+	port := "localhost" 
+	     ^
+../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-338338104/main.go:16:17: missing ',' in parameter list (typecheck)
+	http.HandleFunc("/auth", authenticate)
+	               ^
+../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-338338104/main.go:17:2: expected declaration, found http (typecheck)
+	http.ListenAndServe(":8080", nil)
+	^
+5 issues:
+* typecheck: 5
+
+level=info msg="golangci-lint has version 2.0.2 built with go1.24.1 from 2b224c2 on 2025-03-25T20:33:26Z"
+level=info msg="[config_reader] Config search paths: [./ /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-338338104 /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn /var/folders/6m /var/folders /var / /Users/euclidstellar]"
+level=info msg="maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined"
+level=info msg="[goenv] Read go env for 11.774958ms: map[string]string{\"GOCACHE\":\"/Users/euclidstellar/Library/Caches/go-build\", \"GOROOT\":\"/opt/homebrew/Cellar/go/1.24.1/libexec\"}"
+level=info msg="[lintersdb] Active 5 linters: [errcheck govet ineffassign staticcheck unused]"
+level=info msg="[loader] Go packages loading at mode 8767 (compiled_files|deps|exports_file|files|imports|types_sizes|name) took 525.501792ms"
+level=info msg="[runner/filename_unadjuster] Pre-built 0 adjustments in 1.8165ms"
+level=info msg="[linters_context/goanalysis] analyzers took 32.156177ms with top 10 stages: fact_deprecated: 5.26175ms, buildir: 3.091997ms, tokenfileanalyzer: 1.53429ms, nilness: 1.295212ms, SA5012: 1.006551ms, inspect: 967.128µs, S1003: 890.917µs, ST1012: 836.375µs, SA4025: 819.542µs, typedness: 786.835µs"
+level=info msg="[runner] Issues before processing: 1005, after processing: 5"
+level=info msg="[runner] Processors filtering stat (in/out): path_absoluter: 1005/1005, filename_unadjuster: 1005/1005, generated_file_filter: 1005/1005, diff: 1005/1005, fixer: 1005/1005, max_per_file_from_linter: 5/5, source_code: 5/5, invalid_issue: 1005/1005, exclusion_paths: 1005/1005, max_same_issues: 5/5, max_from_linter: 5/5, path_shortener: 5/5, severity-rules: 5/5, path_prettifier: 5/5, path_relativity: 1005/1005, uniq_by_line: 1005/5, cgo: 1005/1005, exclusion_rules: 1005/1005, nolint_filter: 1005/1005, sort_results: 5/5"
+level=info msg="[runner] processing took 19.985754ms with stages: path_relativity: 14.787083ms, uniq_by_line: 3.182708ms, generated_file_filter: 991.667µs, source_code: 273.418µs, diff: 148.874µs, max_same_issues: 125.875µs, cgo: 117.876µs, path_absoluter: 106.292µs, nolint_filter: 98.209µs, filename_unadjuster: 59.625µs, invalid_issue: 57.458µs, sort_results: 14.709µs, max_from_linter: 8µs, path_shortener: 5.25µs, max_per_file_from_linter: 4.041µs, exclusion_paths: 1.501µs, exclusion_rules: 1.292µs, fixer: 1µs, path_prettifier: 667ns, severity-rules: 209ns"
+level=info msg="[runner] linters took 308.656333ms with stages: goanalysis_metalinter: 287.821542ms"
+level=info msg="File cache stats: 1 entries of total size 703B"
+level=info msg="Memory: 10 samples, avg is 44.7MB, max is 67.6MB"
+level=info msg="Execution took 854.574125ms"
+INFO: 2025/03/30 01:36:09 [golang.go:52] Found issue: main.go:12:12 - expected ')', found '{' (typecheck)
+INFO: 2025/03/30 01:36:09 [golang.go:52] Found issue: main.go:13:14 - missing ',' before newline in parameter list (typecheck)
+INFO: 2025/03/30 01:36:09 [golang.go:52] Found issue: main.go:14:7 - missing ',' in parameter list (typecheck)
+INFO: 2025/03/30 01:36:09 [golang.go:52] Found issue: main.go:16:17 - missing ',' in parameter list (typecheck)
+INFO: 2025/03/30 01:36:09 [golang.go:52] Found issue: main.go:17:2 - expected declaration, found http (typecheck)
+INFO: 2025/03/30 01:36:09 [golang.go:52] Found 5 issues from golangci-lint
+DEBUG: 2025/03/30 01:36:12 [ai_analyzer.go:49] Gemini raw response: [
+  {
+    "title": "Hardcoded Secret Key",
+    "description": "The secret key is hardcoded directly in the source code, making it vulnerable to exposure.",
+    "line": 7,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a more secure key management system to store the secret key."
+  },
+  {
+    "title": "Insecure Authentication",
+    "description": "The authentication mechanism is vulnerable because passwords are sent in plain text via the URL and compared directly to the hardcoded secret key without any salting or hashing.",
+    "line": 20,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use HTTPS, and implement a robust authentication mechanism with proper password hashing (e.g., bcrypt, Argon2) and salting.  Never compare passwords directly to a hardcoded value."
+  },
+  {
+    "title": "Unhandled Errors",
+    "description": "The `ioutil.ReadFile` function can return an error, but it's ignored. This can lead to unexpected behavior or crashes.",
+    "line": 28,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Check for errors returned by `ioutil.ReadFile` and handle them appropriately (e.g., log the error, return an error response)."
+  },
+  {
+    "title": "Password Hashing After Comparison",
+    "description": "The password is hashed using SHA1 *after* it's compared to the secret key. This is inefficient and does not enhance security.",
+    "line": 34,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Hash the password before comparison.  The SHA1 hash should be stored securely and compared against the stored hash."
+  },
+  {
+    "title": "Port Variable Redefinition",
+    "description": "The `port` variable is defined twice in `main` function. The second definition overrides the first.",
+    "line": 15,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Remove the redundant `port := \"localhost\"` line."
+  }
+]
+DEBUG: 2025/03/30 01:36:12 [ai_analyzer.go:49] Extracted JSON content: [
+  {
+    "title": "Hardcoded Secret Key",
+    "description": "The secret key is hardcoded directly in the source code, making it vulnerable to exposure.",
+    "line": 7,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a more secure key management system to store the secret key."
+  },
+  {
+    "title": "Insecure Authentication",
+    "description": "The authentication mechanism is vulnerable because passwords are sent in plain text via the URL and compared directly to the hardcoded secret key without any salting or hashing.",
+    "line": 20,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use HTTPS, and implement a robust authentication mechanism with proper password hashing (e.g., bcrypt, Argon2) and salting.  Never compare passwords directly to a hardcoded value."
+  },
+  {
+    "title": "Unhandled Errors",
+    "description": "The `ioutil.ReadFile` function can return an error, but it's ignored. This can lead to unexpected behavior or crashes.",
+    "line": 28,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Check for errors returned by `ioutil.ReadFile` and handle them appropriately (e.g., log the error, return an error response)."
+  },
+  {
+    "title": "Password Hashing After Comparison",
+    "description": "The password is hashed using SHA1 *after* it's compared to the secret key. This is inefficient and does not enhance security.",
+    "line": 34,
+    "severity": "WARNING",
+    "type": "SECURITY",
+    "fix": "Hash the password before comparison.  The SHA1 hash should be stored securely and compared against the stored hash."
+  },
+  {
+    "title": "Port Variable Redefinition",
+    "description": "The `port` variable is defined twice in `main` function. The second definition overrides the first.",
+    "line": 15,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Remove the redundant `port := \"localhost\"` line."
+  }
+]
+INFO: 2025/03/30 01:36:17 [main.go:321] Analysis complete. Found 0 issues (2 critical, 7 error, 1 warning)
+INFO: 2025/03/30 01:36:17 [response_handler.go:31] Aggregating results
+INFO: 2025/03/30 01:36:17 [aggregator.go:23] Removed 0 duplicate issues
+DEBUG: 2025/03/30 01:36:18 [response_handler.go:94] Sending review comments: [{"body":":rotating_light: **CRITICAL: Hardcoded Secret Key**\n\nThe secret key is hardcoded directly in the source code, making it vulnerable to exposure.\n\n**Suggested Fix:**\n\n```\nUse environment variables or a more secure key management system to store the secret key.\n```\n\n*Detected by Gemini*","line":6,"path":"main.go","side":"RIGHT"},{"body":":rotating_light: **CRITICAL: Insecure Authentication**\n\nThe authentication mechanism is vulnerable because passwords are sent in plain text via the URL and compared directly to the hardcoded secret key without any salting or hashing.\n\n**Suggested Fix:**\n\n```\nUse HTTPS, and implement a robust authentication mechanism with proper password hashing (e.g., bcrypt, Argon2) and salting.  Never compare passwords directly to a hardcoded value.\n```\n\n*Detected by Gemini*","line":20,"path":"main.go","side":"RIGHT"},{"body":":x: **ERROR: Port Variable Redefinition**\n\nThe `port` variable is defined twice in `main` function. The second definition overrides the first.\n\n**Suggested Fix:**\n\n```\nRemove the redundant `port := \"localhost\"` line.\n```\n\n*Detected by Gemini*","line":16,"path":"main.go","side":"RIGHT"},{"body":":x: **ERROR: Unhandled Errors**\n\nThe `ioutil.ReadFile` function can return an error, but it's ignored. This can lead to unexpected behavior or crashes.\n\n**Suggested Fix:**\n\n```\nCheck for errors returned by `ioutil.ReadFile` and handle them appropriately (e.g., log the error, return an error response).\n```\n\n*Detected by Gemini*","line":28,"path":"main.go","side":"RIGHT"},{"body":":x: **ERROR: typecheck: expected ')', found '{'**\n\nexpected ')', found '{'\n\n*Detected by golangci-lint*","line":12,"path":"main.go","side":"RIGHT"},{"body":":x: **ERROR: typecheck: missing ',' before newline in parameter list**\n\nmissing ',' before newline in parameter list\n\n*Detected by golangci-lint*","line":14,"path":"main.go","side":"RIGHT"},{"body":":x: **ERROR: typecheck: missing ',' in parameter list**\n\nmissing ',' in parameter list\n\n*Detected by golangci-lint*","line":14,"path":"main.go","side":"RIGHT"},{"body":":x: **ERROR: typecheck: missing ',' in parameter list**\n\nmissing ',' in parameter list\n\n*Detected by golangci-lint*","line":16,"path":"main.go","side":"RIGHT"},{"body":":x: **ERROR: typecheck: expected declaration, found http**\n\nexpected declaration, found http\n\n*Detected by golangci-lint*","line":17,"path":"main.go","side":"RIGHT"},{"body":":warning: **WARNING: Password Hashing After Comparison**\n\nThe password is hashed using SHA1 *after* it's compared to the secret key. This is inefficient and does not enhance security.\n\n**Suggested Fix:**\n\n```\nHash the password before comparison.  The SHA1 hash should be stored securely and compared against the stored hash.\n```\n\n*Detected by Gemini*","line":34,"path":"main.go","side":"RIGHT"}]
+INFO: 2025/03/30 01:36:20 [response_handler.go:45] Successfully sent 11 comments to GitHub PR #24
+INFO: 2025/03/30 01:36:20 [webhook.go:123] Analysis process completed successfully
+INFO: 2025/03/30 01:59:59 [main.go:70] Shutting down server...
+INFO: 2025/03/30 01:59:59 [main.go:70] Server stopped
+INFO: 2025/03/30 02:00:50 [proc.go:283] Starting Gollora
+INFO: 2025/03/30 02:00:50 [asm_arm64.s:1223] Starting server on 0.0.0.0:8080
+INFO: 2025/03/30 02:01:26 [webhook.go:123] Starting analysis process for event: pull_request
+INFO: 2025/03/30 02:01:26 [main.go:298] Cloning repository: https://github.com/EuclidStellar/gollora-test.git
+INFO: 2025/03/30 02:01:27 [main.go:298] Checking out commit: 0887c60f02c14808cb093b7715de595fd7151ccb
+INFO: 2025/03/30 02:01:27 [main.go:298] Getting changed files between bcde88cc76a8953dfe6a24e1cce61c8293570a66 and 0887c60f02c14808cb093b7715de595fd7151ccb
+INFO: 2025/03/30 02:01:29 [main.go:298] Found 1 changed files
+INFO: 2025/03/30 02:01:29 [main.go:321] Starting code analysis for EuclidStellar/gollora-test
+INFO: 2025/03/30 02:01:29 [asm_arm64.s:1223] Running AI analysis
+INFO: 2025/03/30 02:01:29 [review_engine.go:96] Running AI analysis on 1 files
+INFO: 2025/03/30 02:01:29 [review_engine.go:96] Analyzing main.go with AI
+INFO: 2025/03/30 02:01:29 [asm_arm64.s:1223] Analyzing 1 go files
+INFO: 2025/03/30 02:01:29 [review_engine.go:62] Analyzing 1 Go files
+INFO: 2025/03/30 02:01:29 [review_engine.go:62] Running tool: golangci-lint
+INFO: 2025/03/30 02:01:29 [golang.go:52] No go.mod file found, initializing temporary Go module
+INFO: 2025/03/30 02:01:29 [golang.go:52] Running golangci-lint with args: [run -v main.go]
+WARN: 2025/03/30 02:01:29 [golang.go:52] Error running command: exit status 1
+INFO: 2025/03/30 02:01:29 [golang.go:52] golangci-lint output: ../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-4156469007/main.go:30:5: expected boolean expression, found assignment (missing parentheses around composite literal?) (typecheck)
+	if pass = secretKey {
+	   ^
+1 issues:
+* typecheck: 1
+
+level=info msg="golangci-lint has version 2.0.2 built with go1.24.1 from 2b224c2 on 2025-03-25T20:33:26Z"
+level=info msg="[config_reader] Config search paths: [./ /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-4156469007 /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn /var/folders/6m /var/folders /var / /Users/euclidstellar]"
+level=info msg="maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined"
+level=info msg="[goenv] Read go env for 9.167167ms: map[string]string{\"GOCACHE\":\"/Users/euclidstellar/Library/Caches/go-build\", \"GOROOT\":\"/opt/homebrew/Cellar/go/1.24.1/libexec\"}"
+level=info msg="[lintersdb] Active 5 linters: [errcheck govet ineffassign staticcheck unused]"
+level=info msg="[loader] Go packages loading at mode 8767 (types_sizes|compiled_files|deps|exports_file|files|imports|name) took 326.64275ms"
+level=info msg="[runner/filename_unadjuster] Pre-built 0 adjustments in 2.080875ms"
+level=info msg="[linters_context/goanalysis] analyzers took 12.756283ms with top 10 stages: fact_deprecated: 1.721259ms, buildir: 1.238129ms, inspect: 863.086µs, tokenfileanalyzer: 587.663µs, SA5012: 534.823µs, ctrlflow: 532.037µs, tests: 497.334µs, printf: 483.248µs, nilness: 482.329µs, typedness: 472.166µs"
+level=info msg="[runner] Issues before processing: 201, after processing: 1"
+level=info msg="[runner] Processors filtering stat (in/out): source_code: 1/1, path_absoluter: 201/201, exclusion_rules: 201/201, max_same_issues: 1/1, max_from_linter: 1/1, path_prettifier: 1/1, sort_results: 1/1, cgo: 201/201, nolint_filter: 201/201, diff: 201/201, path_shortener: 1/1, filename_unadjuster: 201/201, exclusion_paths: 201/201, severity-rules: 1/1, max_per_file_from_linter: 1/1, invalid_issue: 201/201, path_relativity: 201/201, generated_file_filter: 201/201, fixer: 201/201, uniq_by_line: 201/1"
+level=info msg="[runner] processing took 407.376µs with stages: path_relativity: 310.332µs, source_code: 40.334µs, uniq_by_line: 8.499µs, nolint_filter: 7.793µs, path_absoluter: 6.541µs, invalid_issue: 5.667µs, filename_unadjuster: 5.626µs, generated_file_filter: 5.167µs, cgo: 5µs, sort_results: 4.916µs, max_from_linter: 3.5µs, max_same_issues: 1.333µs, path_shortener: 542ns, exclusion_rules: 499ns, max_per_file_from_linter: 376ns, exclusion_paths: 376ns, fixer: 375ns, path_prettifier: 292ns, diff: 124ns, severity-rules: 84ns"
+level=info msg="[runner] linters took 145.179834ms with stages: goanalysis_metalinter: 144.666208ms"
+level=info msg="File cache stats: 1 entries of total size 706B"
+level=info msg="Memory: 6 samples, avg is 43.3MB, max is 67.6MB"
+level=info msg="Execution took 484.216ms"
+INFO: 2025/03/30 02:01:29 [golang.go:52] Found issue: main.go:30:5 - expected boolean expression, found assignment (missing parentheses around composite literal?) (typecheck)
+INFO: 2025/03/30 02:01:29 [golang.go:52] Found 1 issues from golangci-lint
+DEBUG: 2025/03/30 02:01:34 [ai_analyzer.go:49] Gemini raw response: [
+  {
+    "title": "Hardcoded Secret Key",
+    "description": "The secret key is hardcoded directly in the source code, making it vulnerable to exposure.",
+    "line": 7,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a more secure key management system to store and retrieve the secret key."
+  },
+  {
+    "title": "Insecure Authentication",
+    "description": "The authentication mechanism is vulnerable because passwords are sent in plain text via the URL and compared directly to the hardcoded secret key without any hashing or salting.",
+    "line": 26,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use HTTPS, and implement a robust authentication mechanism with proper password hashing (e.g., bcrypt, Argon2), salting, and secure password storage."
+  },
+  {
+    "title": "Unhandled Errors",
+    "description": "The `ioutil.ReadFile` function can return an error, but it's ignored. This can lead to unexpected behavior or crashes.",
+    "line": 32,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Check for errors returned by `ioutil.ReadFile` and handle them appropriately (e.g., log the error, return a suitable HTTP error code)."
+  },
+  {
+    "title": "Redeclaration of `port`",
+    "description": "The variable `port` is declared twice in `main` function. The second declaration shadows the first one.",
+    "line": 16,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Remove the second declaration of `port`."
+  },
+  {
+    "title": "Password Hashing After Comparison",
+    "description": "The password is hashed after it's compared to the secret key. This is inefficient and doesn't enhance security.",
+    "line": 36,
+    "severity": "WARNING",
+    "type": "MAINTAINABILITY",
+    "fix": "Perform the password hashing before the comparison."
+  }
+]
+DEBUG: 2025/03/30 02:01:34 [ai_analyzer.go:49] Extracted JSON content: [
+  {
+    "title": "Hardcoded Secret Key",
+    "description": "The secret key is hardcoded directly in the source code, making it vulnerable to exposure.",
+    "line": 7,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a more secure key management system to store and retrieve the secret key."
+  },
+  {
+    "title": "Insecure Authentication",
+    "description": "The authentication mechanism is vulnerable because passwords are sent in plain text via the URL and compared directly to the hardcoded secret key without any hashing or salting.",
+    "line": 26,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use HTTPS, and implement a robust authentication mechanism with proper password hashing (e.g., bcrypt, Argon2), salting, and secure password storage."
+  },
+  {
+    "title": "Unhandled Errors",
+    "description": "The `ioutil.ReadFile` function can return an error, but it's ignored. This can lead to unexpected behavior or crashes.",
+    "line": 32,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Check for errors returned by `ioutil.ReadFile` and handle them appropriately (e.g., log the error, return a suitable HTTP error code)."
+  },
+  {
+    "title": "Redeclaration of `port`",
+    "description": "The variable `port` is declared twice in `main` function. The second declaration shadows the first one.",
+    "line": 16,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Remove the second declaration of `port`."
+  },
+  {
+    "title": "Password Hashing After Comparison",
+    "description": "The password is hashed after it's compared to the secret key. This is inefficient and doesn't enhance security.",
+    "line": 36,
+    "severity": "WARNING",
+    "type": "MAINTAINABILITY",
+    "fix": "Perform the password hashing before the comparison."
+  }
+]
+INFO: 2025/03/30 02:01:38 [main.go:321] Analysis complete. Found 0 issues (2 critical, 3 error, 1 warning)
+INFO: 2025/03/30 02:01:38 [response_handler.go:31] Aggregating results
+INFO: 2025/03/30 02:01:38 [aggregator.go:23] Removed 0 duplicate issues
+DEBUG: 2025/03/30 02:01:39 [response_handler.go:94] Sending review comments: [{"body":":rotating_light: **CRITICAL: Hardcoded Secret Key**\n\nThe secret key is hardcoded directly in the source code, making it vulnerable to exposure.\n\n**Suggested Fix:**\n\n```\nUse environment variables or a more secure key management system to store and retrieve the secret key.\n```\n\n*Detected by Gemini*","line":12,"path":"main.go","side":"RIGHT"},{"body":":rotating_light: **CRITICAL: Insecure Authentication**\n\nThe authentication mechanism is vulnerable because passwords are sent in plain text via the URL and compared directly to the hardcoded secret key without any hashing or salting.\n\n**Suggested Fix:**\n\n```\nUse HTTPS, and implement a robust authentication mechanism with proper password hashing (e.g., bcrypt, Argon2), salting, and secure password storage.\n```\n\n*Detected by Gemini*","line":28,"path":"main.go","side":"RIGHT"},{"body":":x: **ERROR: Redeclaration of `port`**\n\nThe variable `port` is declared twice in `main` function. The second declaration shadows the first one.\n\n**Suggested Fix:**\n\n```\nRemove the second declaration of `port`.\n```\n\n*Detected by Gemini*","line":12,"path":"main.go","side":"RIGHT"},{"body":":x: **ERROR: Unhandled Errors**\n\nThe `ioutil.ReadFile` function can return an error, but it's ignored. This can lead to unexpected behavior or crashes.\n\n**Suggested Fix:**\n\n```\nCheck for errors returned by `ioutil.ReadFile` and handle them appropriately (e.g., log the error, return a suitable HTTP error code).\n```\n\n*Detected by Gemini*","line":12,"path":"main.go","side":"RIGHT"},{"body":":x: **ERROR: typecheck: expected boolean expression, found assignment (missing pa...**\n\nexpected boolean expression, found assignment (missing parentheses around composite literal?)\n\n*Detected by golangci-lint*","line":28,"path":"main.go","side":"RIGHT"},{"body":":warning: **WARNING: Password Hashing After Comparison**\n\nThe password is hashed after it's compared to the secret key. This is inefficient and doesn't enhance security.\n\n**Suggested Fix:**\n\n```\nPerform the password hashing before the comparison.\n```\n\n*Detected by Gemini*","line":12,"path":"main.go","side":"RIGHT"}]
+INFO: 2025/03/30 02:01:40 [response_handler.go:45] Successfully sent 7 comments to GitHub PR #25
+INFO: 2025/03/30 02:01:40 [webhook.go:123] Analysis process completed successfully
+INFO: 2025/03/30 02:05:35 [webhook.go:123] Starting analysis process for event: pull_request
+INFO: 2025/03/30 02:05:35 [main.go:298] Cloning repository: https://github.com/EuclidStellar/gollora-test.git
+INFO: 2025/03/30 02:05:36 [main.go:298] Checking out commit: 0887c60f02c14808cb093b7715de595fd7151ccb
+INFO: 2025/03/30 02:05:36 [main.go:298] Getting changed files between bcde88cc76a8953dfe6a24e1cce61c8293570a66 and 0887c60f02c14808cb093b7715de595fd7151ccb
+INFO: 2025/03/30 02:05:38 [main.go:298] Found 1 changed files
+INFO: 2025/03/30 02:05:38 [main.go:321] Starting code analysis for EuclidStellar/gollora-test
+INFO: 2025/03/30 02:05:38 [asm_arm64.s:1223] Running AI analysis
+INFO: 2025/03/30 02:05:38 [asm_arm64.s:1223] Analyzing 1 go files
+INFO: 2025/03/30 02:05:38 [review_engine.go:96] Running AI analysis on 1 files
+INFO: 2025/03/30 02:05:38 [review_engine.go:62] Analyzing 1 Go files
+INFO: 2025/03/30 02:05:38 [review_engine.go:62] Running tool: golangci-lint
+INFO: 2025/03/30 02:05:38 [review_engine.go:96] Analyzing main.go with AI
+INFO: 2025/03/30 02:05:38 [golang.go:52] No go.mod file found, initializing temporary Go module
+INFO: 2025/03/30 02:05:38 [golang.go:52] Running golangci-lint with args: [run -v main.go]
+WARN: 2025/03/30 02:05:38 [golang.go:52] Error running command: exit status 1
+INFO: 2025/03/30 02:05:38 [golang.go:52] golangci-lint output: ../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3921380911/main.go:30:5: expected boolean expression, found assignment (missing parentheses around composite literal?) (typecheck)
+	if pass = secretKey {
+	   ^
+1 issues:
+* typecheck: 1
+
+level=info msg="golangci-lint has version 2.0.2 built with go1.24.1 from 2b224c2 on 2025-03-25T20:33:26Z"
+level=info msg="[config_reader] Config search paths: [./ /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3921380911 /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn /var/folders/6m /var/folders /var / /Users/euclidstellar]"
+level=info msg="maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined"
+level=info msg="[goenv] Read go env for 9.987542ms: map[string]string{\"GOCACHE\":\"/Users/euclidstellar/Library/Caches/go-build\", \"GOROOT\":\"/opt/homebrew/Cellar/go/1.24.1/libexec\"}"
+level=info msg="[lintersdb] Active 5 linters: [errcheck govet ineffassign staticcheck unused]"
+level=info msg="[loader] Go packages loading at mode 8767 (compiled_files|exports_file|deps|files|imports|name|types_sizes) took 361.416375ms"
+level=info msg="[runner/filename_unadjuster] Pre-built 0 adjustments in 2.208333ms"
+level=info msg="[linters_context/goanalysis] analyzers took 9.04727ms with top 10 stages: buildir: 1.728241ms, fact_deprecated: 1.610256ms, ctrlflow: 658.031µs, tokenfileanalyzer: 554.744µs, inspect: 487.873µs, typedness: 412.672µs, nilness: 376.915µs, printf: 339.969µs, fact_purity: 335.952µs, SA5012: 264.334µs"
+level=info msg="[runner] Issues before processing: 201, after processing: 1"
+level=info msg="[runner] Processors filtering stat (in/out): path_relativity: 201/201, exclusion_rules: 201/201, nolint_filter: 201/201, source_code: 1/1, severity-rules: 1/1, invalid_issue: 201/201, fixer: 201/201, max_same_issues: 1/1, path_prettifier: 1/1, max_per_file_from_linter: 1/1, exclusion_paths: 201/201, generated_file_filter: 201/201, diff: 201/201, uniq_by_line: 201/1, max_from_linter: 1/1, path_shortener: 1/1, path_absoluter: 201/201, cgo: 201/201, sort_results: 1/1, filename_unadjuster: 201/201"
+level=info msg="[runner] processing took 443.127µs with stages: path_relativity: 282.208µs, uniq_by_line: 48.417µs, source_code: 33.583µs, filename_unadjuster: 21µs, nolint_filter: 11.626µs, cgo: 10.792µs, invalid_issue: 10.167µs, generated_file_filter: 8.834µs, path_absoluter: 8.792µs, sort_results: 3.625µs, max_same_issues: 999ns, path_shortener: 708ns, max_from_linter: 625ns, exclusion_paths: 500ns, fixer: 375ns, path_prettifier: 292ns, max_per_file_from_linter: 209ns, exclusion_rules: 167ns, diff: 124ns, severity-rules: 84ns"
+level=info msg="[runner] linters took 135.592667ms with stages: goanalysis_metalinter: 134.900417ms"
+level=info msg="File cache stats: 1 entries of total size 706B"
+level=info msg="Memory: 7 samples, avg is 45.8MB, max is 63.8MB"
+level=info msg="Execution took 509.671625ms"
+INFO: 2025/03/30 02:05:38 [golang.go:52] Found issue: main.go:30:5 - expected boolean expression, found assignment (missing parentheses around composite literal?) (typecheck)
+INFO: 2025/03/30 02:05:38 [golang.go:52] Found 1 issues from golangci-lint
+DEBUG: 2025/03/30 02:05:43 [ai_analyzer.go:49] Gemini raw response: [
+  {
+    "title": "Hardcoded Secret Key",
+    "description": "The secret key is hardcoded directly in the source code, making it vulnerable to exposure.",
+    "line": 7,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a more secure key management system to store the secret key."
+  },
+  {
+    "title": "Insecure Authentication",
+    "description": "The authentication mechanism is vulnerable because passwords are sent in plain text via the URL and compared directly to the hardcoded secret key without any hashing or salting.",
+    "line": 26,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use HTTPS, and implement a robust authentication mechanism with proper password hashing (e.g., bcrypt, Argon2) and salting. Never compare passwords directly to a stored hash."
+  },
+  {
+    "title": "Unhandled Errors",
+    "description": "The `ioutil.ReadFile` function can return an error, but it's ignored. This can lead to unexpected behavior or crashes.",
+    "line": 32,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Check for errors returned by `ioutil.ReadFile` and handle them appropriately (e.g., log the error, return an error response)."
+  },
+  {
+    "title": "Redeclaration of `port`",
+    "description": "The variable `port` is declared twice in `main` function. The second declaration shadows the first one.",
+    "line": 16,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Remove the redundant declaration of `port`."
+  },
+  {
+    "title": "Password Hashing After Comparison",
+    "description": "The password is hashed after it's already compared to the secret key. This is inefficient and doesn't enhance security.",
+    "line": 36,
+    "severity": "WARNING",
+    "type": "MAINTAINABILITY",
+    "fix": "Perform the hashing before the comparison."
+  }
+]
+DEBUG: 2025/03/30 02:05:43 [ai_analyzer.go:49] Extracted JSON content: [
+  {
+    "title": "Hardcoded Secret Key",
+    "description": "The secret key is hardcoded directly in the source code, making it vulnerable to exposure.",
+    "line": 7,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a more secure key management system to store the secret key."
+  },
+  {
+    "title": "Insecure Authentication",
+    "description": "The authentication mechanism is vulnerable because passwords are sent in plain text via the URL and compared directly to the hardcoded secret key without any hashing or salting.",
+    "line": 26,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use HTTPS, and implement a robust authentication mechanism with proper password hashing (e.g., bcrypt, Argon2) and salting. Never compare passwords directly to a stored hash."
+  },
+  {
+    "title": "Unhandled Errors",
+    "description": "The `ioutil.ReadFile` function can return an error, but it's ignored. This can lead to unexpected behavior or crashes.",
+    "line": 32,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Check for errors returned by `ioutil.ReadFile` and handle them appropriately (e.g., log the error, return an error response)."
+  },
+  {
+    "title": "Redeclaration of `port`",
+    "description": "The variable `port` is declared twice in `main` function. The second declaration shadows the first one.",
+    "line": 16,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Remove the redundant declaration of `port`."
+  },
+  {
+    "title": "Password Hashing After Comparison",
+    "description": "The password is hashed after it's already compared to the secret key. This is inefficient and doesn't enhance security.",
+    "line": 36,
+    "severity": "WARNING",
+    "type": "MAINTAINABILITY",
+    "fix": "Perform the hashing before the comparison."
+  }
+]
+INFO: 2025/03/30 02:05:45 [main.go:70] Shutting down server...
+INFO: 2025/03/30 02:05:45 [main.go:70] Server stopped
+INFO: 2025/03/30 15:58:36 [proc.go:283] Starting Gollora
+INFO: 2025/03/30 15:58:36 [asm_arm64.s:1223] Starting server on 0.0.0.0:8080
+INFO: 2025/03/30 15:59:17 [main.go:70] Shutting down server...
+INFO: 2025/03/30 15:59:17 [main.go:70] Server stopped
+INFO: 2025/03/30 15:59:21 [proc.go:283] Starting Gollora
+INFO: 2025/03/30 15:59:21 [asm_arm64.s:1223] Starting server on 0.0.0.0:8080
+INFO: 2025/03/30 15:59:46 [webhook.go:123] Starting analysis process for event: pull_request
+INFO: 2025/03/30 15:59:46 [main.go:298] Cloning repository: https://github.com/EuclidStellar/gollora-test.git
+INFO: 2025/03/30 15:59:47 [main.go:298] Checking out commit: 3255457b6e70579b23f3eb295cb5b0f40fc118e7
+INFO: 2025/03/30 15:59:47 [main.go:298] Getting changed files between bcde88cc76a8953dfe6a24e1cce61c8293570a66 and 3255457b6e70579b23f3eb295cb5b0f40fc118e7
+INFO: 2025/03/30 15:59:49 [main.go:298] Found 1 changed files
+INFO: 2025/03/30 15:59:49 [main.go:321] Starting code analysis for EuclidStellar/gollora-test
+INFO: 2025/03/30 15:59:49 [asm_arm64.s:1223] Running AI analysis
+INFO: 2025/03/30 15:59:49 [asm_arm64.s:1223] Analyzing 1 go files
+INFO: 2025/03/30 15:59:49 [review_engine.go:96] Running AI analysis on 1 files
+INFO: 2025/03/30 15:59:49 [review_engine.go:96] Analyzing main.go with AI
+INFO: 2025/03/30 15:59:49 [review_engine.go:62] Analyzing 1 Go files
+INFO: 2025/03/30 15:59:49 [review_engine.go:62] Running tool: golangci-lint
+INFO: 2025/03/30 15:59:49 [golang.go:52] No go.mod file found, initializing temporary Go module
+INFO: 2025/03/30 15:59:49 [golang.go:52] Running golangci-lint with args: [run -v main.go]
+WARN: 2025/03/30 15:59:50 [golang.go:52] Error running command: exit status 1
+INFO: 2025/03/30 15:59:50 [golang.go:52] golangci-lint output: ../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-122343223/main.go:43:5: expected boolean expression, found assignment (missing parentheses around composite literal?) (typecheck)
+	if pass = secretKey {
+	   ^
+1 issues:
+* typecheck: 1
+
+level=info msg="golangci-lint has version 2.0.2 built with go1.24.1 from 2b224c2 on 2025-03-25T20:33:26Z"
+level=info msg="[config_reader] Config search paths: [./ /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-122343223 /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn /var/folders/6m /var/folders /var / /Users/euclidstellar]"
+level=info msg="maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined"
+level=info msg="[goenv] Read go env for 8.962291ms: map[string]string{\"GOCACHE\":\"/Users/euclidstellar/Library/Caches/go-build\", \"GOROOT\":\"/opt/homebrew/Cellar/go/1.24.1/libexec\"}"
+level=info msg="[lintersdb] Active 5 linters: [errcheck govet ineffassign staticcheck unused]"
+level=info msg="[loader] Go packages loading at mode 8767 (exports_file|files|imports|compiled_files|deps|name|types_sizes) took 321.223083ms"
+level=info msg="[runner/filename_unadjuster] Pre-built 0 adjustments in 1.2665ms"
+level=info msg="[linters_context/goanalysis] analyzers took 10.103851ms with top 10 stages: fact_deprecated: 1.680953ms, buildir: 1.127337ms, typedness: 876.128µs, inspect: 653.364µs, printf: 637.424µs, fact_purity: 583.506µs, tokenfileanalyzer: 393.081µs, SA5012: 316.71µs, nilness: 270.972µs, tests: 253.208µs"
+level=info msg="[runner] Issues before processing: 201, after processing: 1"
+level=info msg="[runner] Processors filtering stat (in/out): filename_unadjuster: 201/201, max_from_linter: 1/1, max_per_file_from_linter: 1/1, path_shortener: 1/1, severity-rules: 1/1, cgo: 201/201, invalid_issue: 201/201, path_relativity: 201/201, exclusion_paths: 201/201, generated_file_filter: 201/201, exclusion_rules: 201/201, fixer: 201/201, uniq_by_line: 201/1, path_absoluter: 201/201, nolint_filter: 201/201, diff: 201/201, max_same_issues: 1/1, source_code: 1/1, path_prettifier: 1/1, sort_results: 1/1"
+level=info msg="[runner] processing took 443.709µs with stages: path_relativity: 311.125µs, source_code: 43.958µs, filename_unadjuster: 23.374µs, nolint_filter: 13.333µs, uniq_by_line: 10.916µs, cgo: 8.959µs, generated_file_filter: 8.625µs, invalid_issue: 8.5µs, path_absoluter: 4.626µs, max_same_issues: 4.124µs, sort_results: 2.959µs, max_from_linter: 792ns, path_shortener: 750ns, max_per_file_from_linter: 376ns, path_prettifier: 333ns, fixer: 292ns, exclusion_paths: 250ns, exclusion_rules: 209ns, diff: 124ns, severity-rules: 84ns"
+level=info msg="[runner] linters took 174.980209ms with stages: goanalysis_metalinter: 174.281541ms"
+level=info msg="File cache stats: 1 entries of total size 908B"
+level=info msg="Memory: 7 samples, avg is 45.7MB, max is 63.1MB"
+level=info msg="Execution took 506.983625ms"
+INFO: 2025/03/30 15:59:50 [golang.go:52] Found issue: main.go:43:5 - expected boolean expression, found assignment (missing parentheses around composite literal?) (typecheck)
+INFO: 2025/03/30 15:59:50 [golang.go:52] Found 1 issues from golangci-lint
+DEBUG: 2025/03/30 15:59:54 [ai_analyzer.go:49] Gemini raw response: [
+  {
+    "title": "Hardcoded Secret Key",
+    "description": "The secret key is hardcoded in the source code, making it vulnerable to exposure.",
+    "line": 7,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a secure configuration management system to store the secret key."
+  },
+  {
+    "title": "Insecure Password Handling",
+    "description": "The password is checked against a hardcoded value ('ok') and the secret key directly, without proper hashing or salting. Passwords are sent in plain text over HTTP.",
+    "line": 26,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use a secure hashing algorithm (like bcrypt or Argon2) with salting to store and compare passwords.  Always use HTTPS."
+  },
+  {
+    "title": "Redeclaration of port variable",
+    "description": "The variable `port` is declared twice in `main` function. The second declaration shadows the first one.",
+    "line": 14,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Remove the second declaration of `port`."
+  },
+  {
+    "title": "Unhandled Errors",
+    "description": "The `ioutil.ReadFile` function can return an error, which is ignored. This can lead to unexpected behavior or crashes.",
+    "line": 42,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Handle the error returned by `ioutil.ReadFile`."
+  },
+  {
+    "title": "Password Check Logic Flaw",
+    "description": "The password check logic is flawed.  The SHA1 hash is calculated after the password is already checked against the secret key, making the hash calculation redundant and potentially misleading.",
+    "line": 45,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Reorganize the password check logic to perform the hash comparison before checking against the secret key (if that's the intended behavior).  Consider removing the secret key check entirely if it's not needed."
+  }
+]
+DEBUG: 2025/03/30 15:59:54 [ai_analyzer.go:49] Extracted JSON content: [
+  {
+    "title": "Hardcoded Secret Key",
+    "description": "The secret key is hardcoded in the source code, making it vulnerable to exposure.",
+    "line": 7,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a secure configuration management system to store the secret key."
+  },
+  {
+    "title": "Insecure Password Handling",
+    "description": "The password is checked against a hardcoded value ('ok') and the secret key directly, without proper hashing or salting. Passwords are sent in plain text over HTTP.",
+    "line": 26,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use a secure hashing algorithm (like bcrypt or Argon2) with salting to store and compare passwords.  Always use HTTPS."
+  },
+  {
+    "title": "Redeclaration of port variable",
+    "description": "The variable `port` is declared twice in `main` function. The second declaration shadows the first one.",
+    "line": 14,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Remove the second declaration of `port`."
+  },
+  {
+    "title": "Unhandled Errors",
+    "description": "The `ioutil.ReadFile` function can return an error, which is ignored. This can lead to unexpected behavior or crashes.",
+    "line": 42,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Handle the error returned by `ioutil.ReadFile`."
+  },
+  {
+    "title": "Password Check Logic Flaw",
+    "description": "The password check logic is flawed.  The SHA1 hash is calculated after the password is already checked against the secret key, making the hash calculation redundant and potentially misleading.",
+    "line": 45,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Reorganize the password check logic to perform the hash comparison before checking against the secret key (if that's the intended behavior).  Consider removing the secret key check entirely if it's not needed."
+  }
+]
+INFO: 2025/03/30 15:59:58 [main.go:321] Analysis complete. Found 0 issues (2 critical, 4 error, 0 warning)
+INFO: 2025/03/30 15:59:58 [response_handler.go:31] Aggregating results
+INFO: 2025/03/30 15:59:58 [aggregator.go:23] Removed 0 duplicate issues
+DEBUG: 2025/03/30 15:59:59 [response_handler.go:94] Sending review comments: [{"body":":rotating_light: **CRITICAL: Hardcoded Secret Key**\n\nThe secret key is hardcoded in the source code, making it vulnerable to exposure.\n\n**Suggested Fix:**\n\n```\nUse environment variables or a secure configuration management system to store the secret key.\n```\n\n*Detected by Gemini*","line":12,"path":"main.go","side":"RIGHT"},{"body":":rotating_light: **CRITICAL: Insecure Password Handling**\n\nThe password is checked against a hardcoded value ('ok') and the secret key directly, without proper hashing or salting. Passwords are sent in plain text over HTTP.\n\n**Suggested Fix:**\n\n```\nUse a secure hashing algorithm (like bcrypt or Argon2) with salting to store and compare passwords.  Always use HTTPS.\n```\n\n*Detected by Gemini*","line":26,"path":"main.go","side":"RIGHT"},{"body":":x: **ERROR: Redeclaration of port variable**\n\nThe variable `port` is declared twice in `main` function. The second declaration shadows the first one.\n\n**Suggested Fix:**\n\n```\nRemove the second declaration of `port`.\n```\n\n*Detected by Gemini*","line":12,"path":"main.go","side":"RIGHT"},{"body":":x: **ERROR: Unhandled Errors**\n\nThe `ioutil.ReadFile` function can return an error, which is ignored. This can lead to unexpected behavior or crashes.\n\n**Suggested Fix:**\n\n```\nHandle the error returned by `ioutil.ReadFile`.\n```\n\n*Detected by Gemini*","line":41,"path":"main.go","side":"RIGHT"},{"body":":x: **ERROR: Password Check Logic Flaw**\n\nThe password check logic is flawed.  The SHA1 hash is calculated after the password is already checked against the secret key, making the hash calculation redundant and potentially misleading.\n\n**Suggested Fix:**\n\n```\nReorganize the password check logic to perform the hash comparison before checking against the secret key (if that's the intended behavior).  Consider removing the secret key check entirely if it's not needed.\n```\n\n*Detected by Gemini*","line":12,"path":"main.go","side":"RIGHT"},{"body":":x: **ERROR: typecheck: expected boolean expression, found assignment (missing pa...**\n\nexpected boolean expression, found assignment (missing parentheses around composite literal?)\n\n*Detected by golangci-lint*","line":41,"path":"main.go","side":"RIGHT"}]
+INFO: 2025/03/30 16:00:00 [response_handler.go:45] Successfully sent 7 comments to GitHub PR #26
+INFO: 2025/03/30 16:00:00 [webhook.go:123] Analysis process completed successfully
+INFO: 2025/03/30 16:00:27 [webhook.go:123] Starting analysis process for event: pull_request
+INFO: 2025/03/30 16:00:27 [main.go:298] Cloning repository: https://github.com/EuclidStellar/gollora-test.git
+INFO: 2025/03/30 16:00:28 [main.go:298] Checking out commit: 3255457b6e70579b23f3eb295cb5b0f40fc118e7
+INFO: 2025/03/30 16:00:28 [main.go:298] Getting changed files between bcde88cc76a8953dfe6a24e1cce61c8293570a66 and 3255457b6e70579b23f3eb295cb5b0f40fc118e7
+INFO: 2025/03/30 16:00:30 [main.go:298] Found 1 changed files
+INFO: 2025/03/30 16:00:30 [main.go:321] Starting code analysis for EuclidStellar/gollora-test
+INFO: 2025/03/30 16:00:30 [asm_arm64.s:1223] Running AI analysis
+INFO: 2025/03/30 16:00:30 [asm_arm64.s:1223] Analyzing 1 go files
+INFO: 2025/03/30 16:00:30 [review_engine.go:96] Running AI analysis on 1 files
+INFO: 2025/03/30 16:00:30 [review_engine.go:96] Analyzing main.go with AI
+INFO: 2025/03/30 16:00:30 [review_engine.go:62] Analyzing 1 Go files
+INFO: 2025/03/30 16:00:30 [review_engine.go:62] Running tool: golangci-lint
+INFO: 2025/03/30 16:00:30 [golang.go:52] No go.mod file found, initializing temporary Go module
+INFO: 2025/03/30 16:00:30 [golang.go:52] Running golangci-lint with args: [run -v main.go]
+WARN: 2025/03/30 16:00:31 [golang.go:52] Error running command: exit status 1
+INFO: 2025/03/30 16:00:31 [golang.go:52] golangci-lint output: ../../../../../../../var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3560854827/main.go:43:5: expected boolean expression, found assignment (missing parentheses around composite literal?) (typecheck)
+	if pass = secretKey {
+	   ^
+1 issues:
+* typecheck: 1
+
+level=info msg="golangci-lint has version 2.0.2 built with go1.24.1 from 2b224c2 on 2025-03-25T20:33:26Z"
+level=info msg="[config_reader] Config search paths: [./ /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-3560854827 /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn /var/folders/6m /var/folders /var / /Users/euclidstellar]"
+level=info msg="maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined"
+level=info msg="[goenv] Read go env for 8.700959ms: map[string]string{\"GOCACHE\":\"/Users/euclidstellar/Library/Caches/go-build\", \"GOROOT\":\"/opt/homebrew/Cellar/go/1.24.1/libexec\"}"
+level=info msg="[lintersdb] Active 5 linters: [errcheck govet ineffassign staticcheck unused]"
+level=info msg="[loader] Go packages loading at mode 8767 (types_sizes|compiled_files|deps|exports_file|files|imports|name) took 316.041833ms"
+level=info msg="[runner/filename_unadjuster] Pre-built 0 adjustments in 2.152667ms"
+level=info msg="[linters_context/goanalysis] analyzers took 16.079905ms with top 10 stages: fact_deprecated: 5.518126ms, buildir: 1.859373ms, inspect: 1.063581ms, tokenfileanalyzer: 910.328µs, SA5012: 560.256µs, nilness: 535.583µs, fact_purity: 473.207µs, ctrlflow: 454.453µs, framepointer: 407.291µs, asmdecl: 396.667µs"
+level=info msg="[runner] Issues before processing: 201, after processing: 1"
+level=info msg="[runner] Processors filtering stat (in/out): max_per_file_from_linter: 1/1, severity-rules: 1/1, filename_unadjuster: 201/201, source_code: 1/1, path_absoluter: 201/201, cgo: 201/201, exclusion_rules: 201/201, diff: 201/201, fixer: 201/201, path_shortener: 1/1, path_prettifier: 1/1, path_relativity: 201/201, max_same_issues: 1/1, max_from_linter: 1/1, sort_results: 1/1, invalid_issue: 201/201, exclusion_paths: 201/201, generated_file_filter: 201/201, nolint_filter: 201/201, uniq_by_line: 201/1"
+level=info msg="[runner] processing took 582.669µs with stages: path_relativity: 269.875µs, uniq_by_line: 224.001µs, source_code: 38.374µs, nolint_filter: 8.751µs, generated_file_filter: 8.75µs, invalid_issue: 6.084µs, filename_unadjuster: 4.792µs, sort_results: 4.625µs, cgo: 4.584µs, path_absoluter: 4.501µs, max_from_linter: 4.333µs, max_same_issues: 1.249µs, path_shortener: 709ns, max_per_file_from_linter: 624ns, exclusion_paths: 374ns, exclusion_rules: 334ns, fixer: 292ns, diff: 208ns, path_prettifier: 125ns, severity-rules: 84ns"
+level=info msg="[runner] linters took 171.258375ms with stages: goanalysis_metalinter: 170.577291ms"
+level=info msg="File cache stats: 1 entries of total size 908B"
+level=info msg="Memory: 6 samples, avg is 42.9MB, max is 67.6MB"
+level=info msg="Execution took 499.103542ms"
+INFO: 2025/03/30 16:00:31 [golang.go:52] Found issue: main.go:43:5 - expected boolean expression, found assignment (missing parentheses around composite literal?) (typecheck)
+INFO: 2025/03/30 16:00:31 [golang.go:52] Found 1 issues from golangci-lint
+DEBUG: 2025/03/30 16:00:34 [ai_analyzer.go:49] Gemini raw response: [
+  {
+    "title": "Hardcoded Secret Key",
+    "description": "The secret key is hardcoded in the source code, making it vulnerable to exposure.",
+    "line": 7,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a secure configuration management system to store the secret key."
+  },
+  {
+    "title": "Insecure Password Handling",
+    "description": "The password is checked against a hardcoded value ('ok') and the secret key directly, without proper hashing or salting. Passwords are sent in plain text over HTTP.",
+    "line": 28,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use a secure hashing algorithm (like bcrypt or Argon2) with salting to store and compare passwords.  Always use HTTPS."
+  },
+  {
+    "title": "Redeclaration of port variable",
+    "description": "The variable `port` is declared twice in `main` function. The second declaration shadows the first one.",
+    "line": 14,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Remove the second declaration of `port`."
+  },
+  {
+    "title": "Unhandled Errors",
+    "description": "The `ioutil.ReadFile` function can return an error, which is ignored. This can lead to unexpected behavior or crashes.",
+    "line": 44,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Handle the error returned by `ioutil.ReadFile`."
+  },
+  {
+    "title": "Password Check Logic Flaw",
+    "description": "The password check logic is flawed.  The SHA1 hash is calculated after the password is already checked against the secret key, making the hash calculation redundant and potentially misleading.",
+    "line": 46,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Reorganize the password check logic to perform the hash comparison before checking against the secret key (if that's even necessary)."
+  }
+]
+DEBUG: 2025/03/30 16:00:34 [ai_analyzer.go:49] Extracted JSON content: [
+  {
+    "title": "Hardcoded Secret Key",
+    "description": "The secret key is hardcoded in the source code, making it vulnerable to exposure.",
+    "line": 7,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use environment variables or a secure configuration management system to store the secret key."
+  },
+  {
+    "title": "Insecure Password Handling",
+    "description": "The password is checked against a hardcoded value ('ok') and the secret key directly, without proper hashing or salting. Passwords are sent in plain text over HTTP.",
+    "line": 28,
+    "severity": "CRITICAL",
+    "type": "SECURITY",
+    "fix": "Use a secure hashing algorithm (like bcrypt or Argon2) with salting to store and compare passwords.  Always use HTTPS."
+  },
+  {
+    "title": "Redeclaration of port variable",
+    "description": "The variable `port` is declared twice in `main` function. The second declaration shadows the first one.",
+    "line": 14,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Remove the second declaration of `port`."
+  },
+  {
+    "title": "Unhandled Errors",
+    "description": "The `ioutil.ReadFile` function can return an error, which is ignored. This can lead to unexpected behavior or crashes.",
+    "line": 44,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Handle the error returned by `ioutil.ReadFile`."
+  },
+  {
+    "title": "Password Check Logic Flaw",
+    "description": "The password check logic is flawed.  The SHA1 hash is calculated after the password is already checked against the secret key, making the hash calculation redundant and potentially misleading.",
+    "line": 46,
+    "severity": "ERROR",
+    "type": "BUG",
+    "fix": "Reorganize the password check logic to perform the hash comparison before checking against the secret key (if that's even necessary)."
+  }
+]
+INFO: 2025/03/30 16:00:37 [main.go:321] Analysis complete. Found 0 issues (2 critical, 4 error, 0 warning)
+INFO: 2025/03/30 16:00:37 [response_handler.go:31] Aggregating results
+INFO: 2025/03/30 16:00:37 [aggregator.go:23] Removed 0 duplicate issues
+DEBUG: 2025/03/30 16:00:39 [response_handler.go:94] Sending review comments: [{"body":":rotating_light: **CRITICAL: Hardcoded Secret Key**\n\nThe secret key is hardcoded in the source code, making it vulnerable to exposure.\n\n**Suggested Fix:**\n\n```\nUse environment variables or a secure configuration management system to store the secret key.\n```\n\n*Detected by Gemini*","line":12,"path":"main.go","side":"RIGHT"},{"body":":rotating_light: **CRITICAL: Insecure Password Handling**\n\nThe password is checked against a hardcoded value ('ok') and the secret key directly, without proper hashing or salting. Passwords are sent in plain text over HTTP.\n\n**Suggested Fix:**\n\n```\nUse a secure hashing algorithm (like bcrypt or Argon2) with salting to store and compare passwords.  Always use HTTPS.\n```\n\n*Detected by Gemini*","line":28,"path":"main.go","side":"RIGHT"},{"body":":x: **ERROR: Redeclaration of port variable**\n\nThe variable `port` is declared twice in `main` function. The second declaration shadows the first one.\n\n**Suggested Fix:**\n\n```\nRemove the second declaration of `port`.\n```\n\n*Detected by Gemini*","line":12,"path":"main.go","side":"RIGHT"},{"body":":x: **ERROR: Unhandled Errors**\n\nThe `ioutil.ReadFile` function can return an error, which is ignored. This can lead to unexpected behavior or crashes.\n\n**Suggested Fix:**\n\n```\nHandle the error returned by `ioutil.ReadFile`.\n```\n\n*Detected by Gemini*","line":41,"path":"main.go","side":"RIGHT"},{"body":":x: **ERROR: Password Check Logic Flaw**\n\nThe password check logic is flawed.  The SHA1 hash is calculated after the password is already checked against the secret key, making the hash calculation redundant and potentially misleading.\n\n**Suggested Fix:**\n\n```\nReorganize the password check logic to perform the hash comparison before checking against the secret key (if that's even necessary).\n```\n\n*Detected by Gemini*","line":12,"path":"main.go","side":"RIGHT"},{"body":":x: **ERROR: typecheck: expected boolean expression, found assignment (missing pa...**\n\nexpected boolean expression, found assignment (missing parentheses around composite literal?)\n\n*Detected by golangci-lint*","line":41,"path":"main.go","side":"RIGHT"}]
+INFO: 2025/03/30 16:00:40 [response_handler.go:45] Successfully sent 7 comments to GitHub PR #26
+INFO: 2025/03/30 16:00:40 [webhook.go:123] Analysis process completed successfully
+INFO: 2025/03/30 16:00:59 [main.go:70] Shutting down server...
+INFO: 2025/03/30 16:00:59 [main.go:70] Server stopped

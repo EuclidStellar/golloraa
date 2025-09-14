@@ -1,0 +1,82 @@
+INFO: 2025/03/26 22:21:42 [proc.go:271] Starting Gollora
+ERROR: 2025/03/26 22:21:42 [main.go:77] Missing required arguments for analyze mode
+INFO: 2025/03/26 22:23:12 [proc.go:271] Starting Gollora
+ERROR: 2025/03/26 22:23:12 [main.go:77] Missing required arguments for analyze mode
+INFO: 2025/03/26 22:25:25 [proc.go:271] Starting Gollora
+INFO: 2025/03/26 22:25:25 [main.go:80] Getting changed files in local repository
+INFO: 2025/03/26 22:25:25 [main.go:289] Starting code analysis for 
+INFO: 2025/03/26 22:25:25 [asm_arm64.s:1222] Running AI analysis
+INFO: 2025/03/26 22:25:25 [asm_arm64.s:1222] Checking dependencies
+INFO: 2025/03/26 22:25:25 [review_engine.go:169] Running AI analysis on 0 files
+INFO: 2025/03/26 22:25:25 [review_engine.go:136] No dependency files found
+ERROR: 2025/03/26 22:25:25 [review_engine.go:195] Failed to export results to PDF: failed to generate PDF: exec: "wkhtmltopdf": executable file not found in $PATH
+INFO: 2025/03/26 22:25:25 [main.go:289] Analysis complete. Found 0 issues (0 critical, 0 error, 0 warning)
+INFO: 2025/03/26 22:25:25 [main.go:80] JSON report saved to: /tmp/gollora-test-repo/results/code-review-20250326-222525-abcdef.json
+INFO: 2025/03/26 22:25:25 [main.go:80] Markdown report saved to: /tmp/gollora-test-repo/results/code-review-20250326-222525-abcdef.md
+INFO: 2025/03/26 22:25:25 [main.go:80] Analysis complete! Found 0 issues
+INFO: 2025/03/26 22:25:25 [proc.go:271] Starting Gollora
+INFO: 2025/03/26 22:25:25 [main.go:206] Starting analysis process for event: pull_request
+INFO: 2025/03/26 22:25:25 [main.go:334] Cloning repository /tmp/gollora-test-repo to /var/folders/6m/_j1d_mgs6qlfxp27zdy5l3wm0000gn/T/gollora-repo-631721237
+INFO: 2025/03/26 22:25:25 [fetcher.go:35] Cloning repository: /tmp/gollora-test-repo
+INFO: 2025/03/26 22:25:25 [main.go:334] Getting changed files between 9283652b960588ee821e0ef9dcb5ac6590bf327a and 9283652b960588ee821e0ef9dcb5ac6590bf327a
+INFO: 2025/03/26 22:25:25 [main.go:334] Found 0 changed files
+INFO: 2025/03/26 22:25:25 [main.go:359] Starting code analysis for 
+INFO: 2025/03/26 22:25:25 [asm_arm64.s:1222] Running AI analysis
+INFO: 2025/03/26 22:25:25 [review_engine.go:169] Running AI analysis on 0 files
+INFO: 2025/03/26 22:25:25 [asm_arm64.s:1222] Checking dependencies
+INFO: 2025/03/26 22:25:25 [review_engine.go:136] No dependency files found
+ERROR: 2025/03/26 22:25:25 [review_engine.go:195] Failed to export results to PDF: failed to generate PDF: exec: "wkhtmltopdf": executable file not found in $PATH
+INFO: 2025/03/26 22:25:25 [main.go:359] Analysis complete. Found 0 issues (0 critical, 0 error, 0 warning)
+INFO: 2025/03/26 22:25:25 [response_handler.go:34] Aggregating results
+INFO: 2025/03/26 22:25:25 [aggregator.go:28] Removed 0 duplicate issues
+ERROR: 2025/03/26 22:25:25 [main.go:206] Failed to send response: unsupported VCS provider: 
+INFO: 2025/03/26 22:28:48 [proc.go:271] Starting Gollora
+INFO: 2025/03/26 22:28:48 [main.go:80] Getting changed files in local repository
+INFO: 2025/03/26 22:28:48 [main.go:289] Starting code analysis for 
+INFO: 2025/03/26 22:28:48 [asm_arm64.s:1222] Running AI analysis
+INFO: 2025/03/26 22:28:48 [asm_arm64.s:1222] Checking dependencies
+INFO: 2025/03/26 22:28:48 [review_engine.go:169] Running AI analysis on 0 files
+INFO: 2025/03/26 22:28:48 [review_engine.go:136] Found dependency files: [/tmp/gollora-issues-repo/package.json /tmp/gollora-issues-repo/go.mod /tmp/gollora-issues-repo/requirements.txt]
+INFO: 2025/03/26 22:28:48 [review_engine.go:136] Running dependency checker: owasp-dependency-check
+ERROR: 2025/03/26 22:28:48 [review_engine.go:136] Error running OWASP Dependency-Check: failed to run OWASP Dependency-Check: exec: "dependency-check": executable file not found in $PATH
+INFO: 2025/03/26 22:28:48 [review_engine.go:136] Running dependency checker: deps.dev
+ERROR: 2025/03/26 22:28:48 [review_engine.go:136] Error running deps.dev check: failed to read dependency file: open /tmp/gollora-issues-repo/tmp/gollora-issues-repo/package.json: no such file or directory
+ERROR: 2025/03/26 22:28:48 [review_engine.go:136] Error running deps.dev check: failed to read dependency file: open /tmp/gollora-issues-repo/tmp/gollora-issues-repo/go.mod: no such file or directory
+ERROR: 2025/03/26 22:28:48 [review_engine.go:136] Error running deps.dev check: failed to read dependency file: open /tmp/gollora-issues-repo/tmp/gollora-issues-repo/requirements.txt: no such file or directory
+ERROR: 2025/03/26 22:28:48 [review_engine.go:195] Failed to export results to PDF: failed to generate PDF: exec: "wkhtmltopdf": executable file not found in $PATH
+INFO: 2025/03/26 22:28:48 [main.go:289] Analysis complete. Found 0 issues (0 critical, 0 error, 0 warning)
+INFO: 2025/03/26 22:28:48 [main.go:80] JSON report saved to: /tmp/gollora-issues-repo/results/code-review-20250326-222848-abcdef.json
+INFO: 2025/03/26 22:28:48 [main.go:80] Markdown report saved to: /tmp/gollora-issues-repo/results/code-review-20250326-222848-abcdef.md
+INFO: 2025/03/26 22:28:48 [main.go:80] Analysis complete! Found 0 issues
+INFO: 2025/03/26 22:32:58 [proc.go:271] Starting Gollora
+INFO: 2025/03/26 22:32:58 [main.go:80] Getting changed files in local repository
+INFO: 2025/03/26 22:32:58 [main.go:289] Starting code analysis for 
+INFO: 2025/03/26 22:32:58 [asm_arm64.s:1222] Running AI analysis
+INFO: 2025/03/26 22:32:58 [review_engine.go:169] Running AI analysis on 3 files
+INFO: 2025/03/26 22:32:58 [review_engine.go:169] Analyzing app.js with AI
+INFO: 2025/03/26 22:32:58 [asm_arm64.s:1222] Analyzing 1 javascript files
+INFO: 2025/03/26 22:32:58 [review_engine.go:105] Analyzing 1 JavaScript/TypeScript files
+INFO: 2025/03/26 22:32:58 [asm_arm64.s:1222] Analyzing 1 go files
+INFO: 2025/03/26 22:32:58 [review_engine.go:102] Analyzing 1 Go files
+INFO: 2025/03/26 22:32:58 [review_engine.go:102] Running tool: golangci-lint
+INFO: 2025/03/26 22:32:58 [asm_arm64.s:1222] Checking dependencies
+INFO: 2025/03/26 22:32:58 [review_engine.go:105] Running tool: eslint
+ERROR: 2025/03/26 22:32:58 [review_engine.go:102] Error running golangci-lint: failed to run golangci-lint: exec: "golangci-lint": executable file not found in $PATH
+INFO: 2025/03/26 22:32:58 [review_engine.go:102] Running tool: staticcheck
+ERROR: 2025/03/26 22:32:58 [review_engine.go:102] Error running staticcheck: failed to run staticcheck: exec: "staticcheck": executable file not found in $PATH
+INFO: 2025/03/26 22:32:58 [review_engine.go:102] Running tool: gosec
+ERROR: 2025/03/26 22:32:58 [review_engine.go:102] Error running gosec: failed to run gosec: exec: "gosec": executable file not found in $PATH
+INFO: 2025/03/26 22:32:58 [review_engine.go:136] Found dependency files: [/tmp/gollora-test2/package.json]
+INFO: 2025/03/26 22:32:58 [review_engine.go:136] Running dependency checker: owasp-dependency-check
+ERROR: 2025/03/26 22:32:58 [review_engine.go:136] Error running OWASP Dependency-Check: failed to run OWASP Dependency-Check: exec: "dependency-check": executable file not found in $PATH
+INFO: 2025/03/26 22:32:58 [review_engine.go:136] Running dependency checker: deps.dev
+ERROR: 2025/03/26 22:32:58 [review_engine.go:136] Error running deps.dev check: failed to read dependency file: open /tmp/gollora-test2/tmp/gollora-test2/package.json: no such file or directory
+ERROR: 2025/03/26 22:32:58 [review_engine.go:105] Error running ESLint: failed to parse ESLint output: invalid character 'O' looking for beginning of value
+INFO: 2025/03/26 22:32:58 [review_engine.go:105] Running tool: jshint
+INFO: 2025/03/26 22:33:02 [review_engine.go:169] Analyzing main.go with AI
+INFO: 2025/03/26 22:33:06 [review_engine.go:169] Analyzing package.json with AI
+ERROR: 2025/03/26 22:33:10 [review_engine.go:195] Failed to export results to PDF: failed to generate PDF: exec: "wkhtmltopdf": executable file not found in $PATH
+INFO: 2025/03/26 22:33:10 [main.go:289] Analysis complete. Found 16 issues (2 critical, 5 error, 6 warning)
+INFO: 2025/03/26 22:33:10 [main.go:80] JSON report saved to: /tmp/gollora-test2/results/code-review-20250326-223258-abcdef.json
+INFO: 2025/03/26 22:33:10 [main.go:80] Markdown report saved to: /tmp/gollora-test2/results/code-review-20250326-223258-abcdef.md
+INFO: 2025/03/26 22:33:10 [main.go:80] Analysis complete! Found 16 issues

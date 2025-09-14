@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  host: "0.0.0.0"
+
+github:
+  webhook_secret: "" # Set this via environment variable
+  api_token: "" # Set via environment variable
+
+analysis:
+  timeout: 300 # seconds
+  max_file_size: 1048576 # 1MB
+  max_files_per_review: 50
+  
+ai:
+  enabled: true
+  provider: "gemini" # options: vertexai, openai
+  api_key: "" # Set via environment variable
+  model: "gemini-1.5-flash"
+
+export:
+  formats: ["json" , "markdown" , "pdf"]
