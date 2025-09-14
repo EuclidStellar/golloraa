@@ -2,13 +2,13 @@
 
 ```mermaid 
 flowchart TD
-    subgraph "Configuration"
+    subgraph Configuration
         A1[config.yaml]
         A2[analysis_tools.yaml]
         A3[Environment Variables]
     end
     
-    subgraph "Core Components"
+    subgraph Core_Components
         B[main.go]
         C[webhook.go]
         D[fetcher.go]
@@ -17,19 +17,19 @@ flowchart TD
         G[response_handler.go]
     end
     
-    subgraph "Analysis & Agentic Modules"
+    subgraph Analysis_Agentic_Modules
         H[golang.go]
         I[ai_analyzer.go]
         P[agent.go]
         Q[ast_tool.go]
     end
     
-    subgraph "Models"
+    subgraph Models
         J[types.go]
         K[result.go]
     end
     
-    subgraph "External Tools"
+    subgraph External_Tools
         L[golangci-lint]
         M[staticcheck]
         N[gosec]
@@ -64,7 +64,6 @@ flowchart TD
     H --> M
     H --> N
     I --> O
-
 ```
 
 ### Webhook Processing Flow
@@ -72,18 +71,15 @@ flowchart TD
 ```mermaid
 stateDiagram-v2
     [*] --> WebhookReceived
-    
     WebhookReceived --> ValidateSignature
     ValidateSignature --> ExtractPayload
     ValidateSignature --> InvalidSignature
     InvalidSignature --> [*]
-    
     ExtractPayload --> DeterminePRAction
-    DeterminePRAction --> ProcessPR: opened/synchronized
-    DeterminePRAction --> IgnoreEvent: closed/other
-    IgnoreEvent --> [*]
-    
-    ProcessPR --> CloneRepository
+    DeterminePRAction --> ProcessPR_opened_or_synced
+    DeterminePRAction --> IgnoreEvent_closed_or_other
+    IgnoreEvent_closed_or_other --> [*]
+    ProcessPR_opened_or_synced --> CloneRepository
     CloneRepository --> GetChangedFiles
     GetChangedFiles --> InitiateAnalysis
     InitiateAnalysis --> [*]
@@ -92,58 +88,45 @@ stateDiagram-v2
 ### Analysis Flow
 
 ```mermaid
-
 stateDiagram-v2
     [*] --> ReceiveFiles
-    
     ReceiveFiles --> DetermineLanguages
     DetermineLanguages --> DispatchAnalyzers
-    
-    DispatchAnalyzers --> StaticAnalysis: .go, .py files
-    DispatchAnalyzers --> AIAnalysis: All files
-    
-    StaticAnalysis --> RunLinters
+    DispatchAnalyzers --> StaticAnalysis_go_py
+    DispatchAnalyzers --> AIAnalysis_all_files
+    StaticAnalysis_go_py --> RunLinters
     RunLinters --> CollectStaticIssues
-    
-    AIAnalysis --> PrepareAIPrompt
+    AIAnalysis_all_files --> PrepareAIPrompt
     PrepareAIPrompt --> CallGeminiAPI
     CallGeminiAPI --> ParseAIResponse
     ParseAIResponse --> CollectAIIssues
-    
     CollectStaticIssues --> AggregateResults
     CollectAIIssues --> AggregateResults
-    
     AggregateResults --> AISeverityScoring
     AISeverityScoring --> RemoveDuplicates
     RemoveDuplicates --> AnalyzeDependencies
     AnalyzeDependencies --> SortByPriority
     SortByPriority --> FormatForOutput
     FormatForOutput --> PostComments
-    
     PostComments --> [*]
-
 ```
 
 ### Interactive Q&A Flow
 
 ```mermaid
 flowchart TD
-    subgraph "Q&A Agent Logic"
-        A[User Question] --> B{AI Router};
-        B -- "Specific Go Query" --> C[AST Tool];
-        B -- "General Question" --> D[Vector Search (RAG)];
-        
-        C --> E[Parse Go AST];
-        E --> F[Extract Structural Info];
-        
-        D --> G[Generate Embedding];
-        G --> H[Find Similar Chunks];
-        H --> I[Build Context];
-        
-        F --> J{Format Response};
-        I --> J;
-        
-        J --> K[Final Answer];
+    subgraph QnA_Agent_Logic
+        U[User Question] --> Router{AI Router}
+        Router -- Specific_Go_Query --> AST_Tool
+        Router -- General_Question --> Vector_Search_RAG
+        AST_Tool --> Parse_Go_AST
+        Parse_Go_AST --> Extract_Structural_Info
+        Vector_Search_RAG --> Generate_Embedding
+        Generate_Embedding --> Find_Similar_Chunks
+        Find_Similar_Chunks --> Build_Context
+        Extract_Structural_Info --> Format_Response
+        Build_Context --> Format_Response
+        Format_Response --> Final_Answer
     end
 ```
 
@@ -152,15 +135,12 @@ flowchart TD
 ```mermaid
 flowchart TD
     A[Receive Go Files] --> B{Is go.mod present?}
-    B -->|Yes| D[Run golangci-lint]
-    B -->|No| C[Initialize temporary Go module]
-    C --> D
-    
-    D --> E[Parse golangci-lint Output]
-    E --> F[Map Issues to Standard Format]
-    F --> G[Return Standardized Issues]
-   
-
+    B -->|Yes| Run_golangci_lint
+    B -->|No| Initialize_temp_go_module
+    Initialize_temp_go_module --> Run_golangci_lint
+    Run_golangci_lint --> Parse_golangci_output
+    Parse_golangci_output --> Map_Issues_to_Standard_Format
+    Map_Issues_to_Standard_Format --> Return_Standardized_Issues
 ```
 
 ### AI Analysis Flow
@@ -170,16 +150,12 @@ flowchart TD
     A[Receive File Content] --> B[Prepare AI Prompt]
     B --> C[Call Gemini API]
     C --> D{Valid JSON Response?}
-    
-    D -->|Yes| F[Parse JSON]
-    D -->|No| E[Clean and Extract JSON]
-    E --> F
-    
-    F --> G{Complete JSON?}
-    G -->|Yes| I[Convert to Issues]
-    G -->|No| H[Recover Partial JSON]
-    H --> I
-    
-    I --> J[Return AI Issues]
-
+    D -->|Yes| Parse_JSON
+    D -->|No| Clean_and_Extract_JSON
+    Clean_and_Extract_JSON --> Parse_JSON
+    Parse_JSON --> E{Complete JSON?}
+    E -->|Yes| Convert_to_Issues
+    E -->|No| Recover_Partial_JSON
+    Recover_Partial_JSON --> Convert_to_Issues
+    Convert_to_Issues --> Return_AI_Issues
 ```
