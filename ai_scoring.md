@@ -6,16 +6,16 @@ This feature elevates the analysis report from a simple list of linter warnings 
 
 ```mermaid
 flowchart TD
-    A[Static Analyzer finds "Hardcoded Password"] --> B{Initial Severity: WARNING};
-    B --> C[Aggregator Sends to AI Scorer];
-    C --> D{Context: Issue in `config.go`};
-    D --> E[LLM reasons: "A password in a config file is a critical vulnerability."];
-    E --> F[New Severity: CRITICAL];
-    F --> G[Issue updated with new severity and AI justification];
+    A[Static Analyzer finds Hardcoded Password] --> B{Initial Severity: WARNING}
+    B --> C[Aggregator Sends to AI Scorer]
+    C --> D[Context: Issue in config.go]
+    D --> E[LLM reasons: A password in a config file is a critical vulnerability]
+    E --> F[New Severity: CRITICAL]
+    F --> G[Issue updated with new severity and AI justification]
 ```
 
 ### What It Is
-Static analysis tools are great at finding potential issues, but they often lack context. They might flag a hardcoded string as a "magic number" with a `WARNING` severity, regardless of whether it's a test value or a production database password.
+Static analysis tools are great at finding potential issues, but they often lack context. They might flag a hardcoded string as a magic number with a WARNING severity, regardless of whether it's a test value or a production database password.
 
 AI-Powered Severity Scoring uses a Large Language Model (LLM) to re-evaluate the severity of issues found by static tools, taking into account the code's content and filename to make a more intelligent judgment.
 
@@ -33,15 +33,19 @@ This feature helps developers focus on what truly matters.
 #### Use Case 1: Prioritizing Critical Security Risks
 A linter might flag any long, random-looking string as a potential hardcoded secret. The AI can differentiate.
 
-- **Linter Output:** `Severity: WARNING`, `Issue: "G101: Potential hardcoded credentials"`
+- **Linter Output:** `Severity: WARNING`, `Issue: G101 Potential hardcoded credentials`
 - **File Context:** The string is in a file named `production_database.go`.
 - **AI Re-Scoring:** The AI recognizes the filename context and upgrades the severity.
-- **Final Report:** `Severity: CRITICAL`, `Description: ... \n\n**AI Justification**: A hardcoded credential in a file named for a production environment is a critical security risk that could lead to a data breach.`
+- **Final Report:** `Severity: CRITICAL`, `Description: ...`
+
+**AI Justification:** A hardcoded credential in a file used for production configuration is a critical security risk that could lead to a data breach.
 
 #### Use Case 2: De-prioritizing Minor Issues
 Conversely, the AI can downgrade issues that are less important.
 
-- **Linter Output:** `Severity: ERROR`, `Issue: "Function has high cyclomatic complexity"`
+- **Linter Output:** `Severity: ERROR`, `Issue: Function has high cyclomatic complexity`
 - **File Context:** The function is in a file named `test_helpers.go`.
 - **AI Re-Scoring:** The AI understands that high complexity in a test helper function is less risky than in production logic.
-- **Final Report:** `Severity: WARNING`, `Description: ... \n\n**AI Justification**: While the complexity is high, this function is part of a test suite, which reduces its immediate impact on production stability.`
+- **Final Report:** `Severity: WARNING`, `Description: ...`
+
+**AI Justification:** While the complexity is high, this function is part of a test suite, which reduces its immediate impact on production stability.
