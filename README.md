@@ -68,14 +68,14 @@ flowchart TD
 
 Dive deeper into the project's design, features, and implementation.
 
-- **[Architecture & Design Notes](architecture_notes.md):** High-level design decisions and trade-offs.
-- **[Project Requirements & Fulfillment](project_requirements.md):** How the project meets the assignment goals.
-- **[Technical Notes](technical_notes.md):** A list of all external tools, APIs, and libraries used.
+- **[Architecture & Design Notes](architechture.md):** High-level design decisions and trade-offs.
+- **[Project Requirements & Fulfillment](project_requirement.md):** How the project meets the assignment goals.
+- **[Technical Notes](technincal_notes.md):** A list of all external tools, APIs, and libraries used.
 - **Feature Deep Dives:**
-    - **[Retrieval-Augmented Generation (RAG)](feature_rag_agent.md):** How the agent answers general questions.
-    - **[AST-Powered Q&A](feature_ast_qa.md):** How the agent answers precise structural questions.
-    - **[AI-Powered Severity Scoring](feature_ai_scoring.md):** How issue priority is intelligently determined.
-    - **[On-Demand Analysis Dashboard](feature_dashboard.md):** How the web UI provides rich visualizations.
+    - **[Retrieval-Augmented Generation (RAG)](RAG.md):** How the agent answers general questions.
+    - **[AST-Powered Q&A](feature_ast.md):** How the agent answers precise structural questions.
+    - **[AI-Powered Severity Scoring](ai_scoring.md):** How issue priority is intelligently determined.
+    - **[On-Demand Analysis Dashboard](dashboard.md):** How the web UI provides rich visualizations.
 
 ---
 
